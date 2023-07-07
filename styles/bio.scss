@@ -1,8 +1,6 @@
 @use "./partials/_typography" as *;
 @use "./partials/mixins" as *;
 @use "./partials/global" as *;
-// Do I need this? Or is it only needed in mixins
-@use "./partials/variables" as *;
 @use "./partials/colors" as *;
 
 .header {
@@ -10,34 +8,47 @@
   flex-direction: column;
   color: white;
   background-color: $bandsite-black;
-  &__title {
+  &__navbar {
+    display: flex;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+  &__logo {
     display: flex;
     height: 4vh;
     padding-top: 1rem;
     @include margin-bottom;
   }
-
-  &__links {
+  &__link-container {
     display: flex;
+  }
+  &__link-bio {
+    display: flex;
+    width: 50vw;
+    border-bottom: 4px solid $white;
+    justify-content: center;
   }
   &__bio {
     display: flex;
     justify-content: center;
-    width: 50vw;
-    border-bottom: 4px solid $white;
-  }
-
-  &__link {
-    display: flex;
-    flex-direction: column;
-    @include subheader-text;
     margin-bottom: 0.5rem;
+    @include subheader-text;
+  }
+  &__link-shows {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    // border-bottom: 4px solid $white;
   }
   &__shows {
     display: flex;
     justify-content: center;
-    width: 50vw;
-    // border-bottom: 4px solid $white;
+    margin-bottom: 0.5rem;
+    @include subheader-text;
   }
 
   &__hero {
