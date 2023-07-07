@@ -1,1 +1,203 @@
-/*# sourceMappingURL=bio.css.map */
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir-2";
+  src: url(../assets/fonts/AvenirNextLTPro-Demi.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir-3";
+  src: url(../assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir";
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #323232;
+}
+.header__title {
+  display: flex;
+  height: 4vh;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+.header__links {
+  display: flex;
+}
+.header__bio {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  border-bottom: 4px solid white;
+}
+.header__link {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.header__shows {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+.header__hero {
+  display: flex;
+  background-image: url(../assets/images/hero-bio.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.5);
+  height: 20vh;
+  color: white;
+  align-items: center;
+}
+.header__hero-title {
+  font-size: 24px;
+  margin-left: 16px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin-left: 16px;
+}
+.about__title {
+  font-family: "Avenir-2";
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 24px;
+}
+.about__image {
+  margin-bottom: 16px;
+}
+.about__quote {
+  font-family: "Avenir-2";
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+.about__sub-title {
+  font-family: "Avenir-2";
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+.about__paragraph-one {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  width: 88vw;
+}
+.about__paragraph-two {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  width: 87vw;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 24px 16px 0 16px;
+  background-color: #fafafa;
+}
+.gallery__title {
+  font-family: "Avenir-2";
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.gallery__image {
+  margin-bottom: 16px;
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  font-size: 13px;
+  line-height: 18px;
+}
+.footer__title {
+  font-family: "Avenir-2";
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 24px;
+  margin-bottom: 16px;
+}
+.footer__logos {
+  display: flex;
+  margin-bottom: 16px;
+}
+.footer__logo {
+  height: 25px;
+  margin-right: 25px;
+}
+.footer__bandsite-logo {
+  display: none;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  max-height: 20px;
+  max-width: 120px;
+}
+.footer__contacts {
+  margin-bottom: 48px;
+}
+.footer__cam {
+  margin-bottom: 16px;
+}
+.footer__cam--bold {
+  font-family: "Avenir-2";
+}
+.footer__bees-address {
+  margin-bottom: 16px;
+}
+.footer__bees-email {
+  margin-bottom: 16px;
+}
+.footer__pearl {
+  margin-bottom: 16px;
+}
+.footer__pearl--bold {
+  font-family: "Avenir-2";
+}
+.footer__limit-description {
+  margin-bottom: 16px;
+}
+.footer__limit-email {
+  margin-bottom: 16px;
+}
+.footer__carson {
+  margin-bottom: 16px;
+}
+.footer__carson--bold {
+  font-family: "Avenir-2";
+}
+.footer__arch-description {
+  margin-bottom: 16px;
+}
+.footer__bandsite-logo-two {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  max-height: 20px;
+  max-width: 120px;
+}
+.footer__copyright {
+  font-size: 11px;
+}/*# sourceMappingURL=bio.css.map */
