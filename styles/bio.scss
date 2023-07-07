@@ -3,6 +3,8 @@
 @use "./partials/global" as *;
 @use "./partials/colors" as *;
 
+// Kyla said the selected is white, not selected is alabaster
+
 .header {
   display: flex;
   flex-direction: column;
@@ -12,7 +14,8 @@
     display: flex;
 
     @include tablet {
-      padding: 1.25rem 2.5rem;
+      // padding: 1.25rem 2.5rem;
+      padding: 0.625rem 0rem 0rem 2.5rem;
     }
   }
   &__links {
@@ -23,6 +26,7 @@
 
     @include tablet {
       flex-direction: row;
+      align-items: normal;
     }
   }
   &__logo {
@@ -32,7 +36,8 @@
     @include margin-bottom;
 
     @include tablet {
-      margin-bottom: 0;
+      margin-bottom: 1.5rem;
+      margin-right: 3.25rem;
     }
   }
   &__link-container {
@@ -43,16 +48,24 @@
     width: 50vw;
     border-bottom: 4px solid $white;
     justify-content: center;
+    align-items: flex-end;
 
     @include tablet {
       width: 9vw;
+      margin-right: 3.25rem;
+      padding-bottom: 1.25rem;
     }
   }
   &__bio {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem;
+    color: $alabaster;
     @include subheader-text;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
   &__link-shows {
     display: flex;
@@ -62,13 +75,20 @@
 
     @include tablet {
       width: 9vw;
+      padding-bottom: 1.5rem;
     }
   }
   &__shows {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem;
+    color: $white;
     @include subheader-text;
+
+    @include tablet {
+      margin-bottom: 0;
+      align-items: flex-end;
+    }
   }
 
   &__hero {
@@ -80,6 +100,10 @@
     height: 20vh;
     color: $white;
     align-items: center;
+
+    @include tablet {
+      height: 45vh;
+    }
   }
   &__hero-title {
     font-size: 1.5rem;
@@ -130,6 +154,7 @@
       margin-top: 0;
       margin-bottom: 2.25rem;
       width: 75vw;
+      height: 35vh;
     }
   }
   &__quote {
