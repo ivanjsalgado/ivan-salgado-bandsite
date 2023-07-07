@@ -1,6 +1,7 @@
 @use "./partials/_typography" as *;
 @use "./partials/mixins" as *;
 @use "./partials/global" as *;
+// Do I need this? Or is it only needed in mixins
 @use "./partials/variables" as *;
 @use "./partials/colors" as *;
 

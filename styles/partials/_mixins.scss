@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 @mixin body-text {
   font-size: 0.8125rem;
   line-height: 1.125rem;
@@ -12,4 +14,16 @@
 }
 @mixin margin-bottom {
   margin-bottom: 1rem;
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
 }
