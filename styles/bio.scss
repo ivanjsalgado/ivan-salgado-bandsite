@@ -114,12 +114,21 @@
       @include header-section-text-tablet-desktop;
     }
   }
+  &__container {
+    display: flex;
+    flex-direction: column;
 
+    @include tablet {
+      margin: 0 auto;
+      width: 75vw;
+    }
+  }
   &__image {
     @include margin-bottom;
 
     @include tablet {
-      margin: 0 auto 2.25rem auto;
+      margin-top: 0;
+      margin-bottom: 2.25rem;
       width: 75vw;
     }
   }
@@ -129,9 +138,13 @@
     // @include margin-bottom;
 
     @include tablet {
-      margin: 0 auto;
+      // margin: 0 auto;
       width: 75vw;
-      @include subheader-text-tablet-desktop;
+      // @include subheader-text-tablet-desktop;
+      // Should be set to what's on top but this is the closest
+      // I can get
+      font-size: 1.4rem;
+      line-height: 2rem;
     }
   }
   &__author {
@@ -144,7 +157,9 @@
       // Made this 24px instead of 36px, visually looks better
       margin-top: 1.5rem;
       margin-bottom: 0;
-      margin-left: 3.5rem;
+      // Should be 0.875 but this is closer to mockup
+      font-size: 1rem;
+      // margin-left: 3.5rem;
     }
   }
   &__sub-title {
@@ -153,7 +168,7 @@
     @include margin-bottom;
 
     @include tablet {
-      margin-left: 3.5rem;
+      // margin-left: 3.5rem;
       margin-bottom: 24px;
       margin-top: 40px;
       @include subheader-text-tablet-desktop;
@@ -165,7 +180,7 @@
 
     @include tablet {
       flex-direction: row;
-      margin-left: 3.5rem;
+      // margin-left: 3.5rem;
       width: 78vw;
       padding-bottom: 2.25rem;
     }

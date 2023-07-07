@@ -142,12 +142,23 @@
     line-height: 2.75rem;
   }
 }
+.about__container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .about__container {
+    margin: 0 auto;
+    width: 75vw;
+  }
+}
 .about__image {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .about__image {
-    margin: 0 auto 2.25rem auto;
+    margin-top: 0;
+    margin-bottom: 2.25rem;
     width: 75vw;
   }
 }
@@ -158,9 +169,8 @@
 }
 @media screen and (min-width: 768px) {
   .about__quote {
-    margin: 0 auto;
     width: 75vw;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2rem;
   }
 }
@@ -175,7 +185,7 @@
   .about__author {
     margin-top: 1.5rem;
     margin-bottom: 0;
-    margin-left: 3.5rem;
+    font-size: 1rem;
   }
 }
 .about__sub-title {
@@ -186,7 +196,6 @@
 }
 @media screen and (min-width: 768px) {
   .about__sub-title {
-    margin-left: 3.5rem;
     margin-bottom: 24px;
     margin-top: 40px;
     font-size: 1.5rem;
@@ -200,7 +209,6 @@
 @media screen and (min-width: 768px) {
   .about__paragraphs {
     flex-direction: row;
-    margin-left: 3.5rem;
     width: 78vw;
     padding-bottom: 2.25rem;
   }
