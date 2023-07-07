@@ -30,8 +30,8 @@
 .header__title {
   display: flex;
   height: 4vh;
-  padding-top: 16px;
-  margin-bottom: 16px;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 .header__links {
   display: flex;
@@ -45,9 +45,9 @@
 .header__link {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 8px;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin-bottom: 0.5rem;
 }
 .header__shows {
   display: flex;
@@ -65,47 +65,47 @@
   align-items: center;
 }
 .header__hero-title {
-  font-size: 24px;
-  margin-left: 16px;
+  font-size: 1.5rem;
+  margin-left: 1rem;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   width: 90vw;
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 .about__title {
   font-family: "Avenir-2";
-  font-size: 24px;
-  line-height: 32px;
-  margin-top: 24px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
 }
 .about__image {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .about__quote {
   font-family: "Avenir-2";
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 16px;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin-bottom: 1rem;
 }
 .about__sub-title {
   font-family: "Avenir-2";
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 16px;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin-bottom: 1rem;
 }
 .about__paragraph-one {
-  font-size: 13px;
-  line-height: 18px;
-  margin-bottom: 16px;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  margin-bottom: 1rem;
   width: 88vw;
 }
 .about__paragraph-two {
-  font-size: 13px;
-  line-height: 18px;
-  margin-bottom: 16px;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  margin-bottom: 1rem;
   width: 87vw;
 }
 
@@ -118,86 +118,86 @@
 }
 .gallery__title {
   font-family: "Avenir-2";
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
 }
 .gallery__image {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .footer {
   background-color: #323232;
   color: white;
-  padding-left: 16px;
-  padding-bottom: 16px;
-  font-size: 13px;
-  line-height: 18px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
 }
 .footer__title {
   font-family: "Avenir-2";
-  font-size: 24px;
-  line-height: 32px;
-  padding-top: 24px;
-  margin-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 .footer__logos {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__logo {
-  height: 25px;
-  margin-right: 25px;
+  height: 1.5625rem;
+  margin-right: 1.5625rem;
 }
 .footer__bandsite-logo {
   display: none;
-  margin-top: 24px;
-  margin-bottom: 16px;
-  max-height: 20px;
-  max-width: 120px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  max-height: 1.25rem;
+  max-width: 7.5rem;
 }
 .footer__contacts {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 .footer__cam {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__cam--bold {
   font-family: "Avenir-2";
 }
 .footer__bees-address {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__bees-email {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__pearl {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__pearl--bold {
   font-family: "Avenir-2";
 }
 .footer__limit-description {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__limit-email {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__carson {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__carson--bold {
   font-family: "Avenir-2";
 }
 .footer__arch-description {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .footer__bandsite-logo-two {
-  margin-top: 24px;
-  margin-bottom: 16px;
-  max-height: 20px;
-  max-width: 120px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  max-height: 1.25rem;
+  max-width: 7.5rem;
 }
 .footer__copyright {
-  font-size: 11px;
+  font-size: 0.6875rem;
 }/*# sourceMappingURL=bio.css.map */
