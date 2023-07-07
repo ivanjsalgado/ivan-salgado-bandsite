@@ -184,7 +184,7 @@
   &__paragraph-two {
     @include body-text;
     @include margin-bottom;
-    width: 35vw;
+    width: 87vw;
 
     @include tablet {
       width: 36vw;
@@ -217,11 +217,22 @@
       margin-bottom: 2.25rem;
     }
   }
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      width: 93vw;
+      flex-wrap: wrap;
+    }
+  }
   &__image {
     @include margin-bottom;
 
     @include tablet {
-      width: 27vw;
+      width: 28vw;
+      margin-right: 1.3rem;
     }
   }
 }
@@ -229,10 +240,32 @@
 .footer {
   // This might be wrong
   background-color: $bandsite-black;
+  display: flex;
+  flex-direction: column;
   color: $white;
   padding-left: 1rem;
   padding-bottom: 1rem;
   @include body-text;
+
+  @include tablet {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    @include footer-tablet-desktop;
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      width: 89vw;
+      justify-content: space-between;
+      margin-bottom: 2.25rem;
+      padding-top: 3rem;
+      align-items: center;
+    }
+  }
 
   &__title {
     // Not sure
@@ -240,11 +273,22 @@
     @include header-text;
     padding-top: 1.5rem;
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 0;
+      padding-top: 0;
+      font-size: 2.25rem;
+    }
   }
 
   &__logos {
     display: flex;
     @include margin-bottom;
+
+    @include tablet {
+      margin-right: 9.25rem;
+      margin-bottom: 0;
+    }
   }
   &__logo {
     height: 1.5625rem;
@@ -256,12 +300,39 @@
     @include margin-bottom;
     max-height: 1.25rem;
     max-width: 7.5rem;
+
+    @include tablet {
+      display: flex;
+      padding: 0;
+      margin-bottom: 0;
+      margin-top: 0;
+      height: 7.5rem;
+    }
   }
   &__contacts {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3rem;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 89vw;
+    }
+  }
+  &__cam-container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+    }
   }
   &__cam {
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 2.25rem;
+    }
 
     &--bold {
       font-family: "Avenir-2";
@@ -269,12 +340,31 @@
   }
   &__bees-address {
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 2.25rem;
+    }
   }
   &__bees-email {
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 2.25rem;
+    }
+  }
+  &__pearl-container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+    }
   }
   &__pearl {
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 2.25rem;
+    }
 
     &--bold {
       font-family: "Avenir-2";
@@ -282,12 +372,32 @@
   }
   &__limit-description {
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 2.25rem;
+    }
   }
   &__limit-email {
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 2.25rem;
+    }
+  }
+  &__carson-container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      margin-right: 0.5rem;
+    }
   }
   &__carson {
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 2.25rem;
+    }
 
     &--bold {
       font-family: "Avenir-2";
@@ -295,6 +405,10 @@
   }
   &__arch-description {
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 2.25rem;
+    }
   }
   &__arch-email {
   }
@@ -303,8 +417,17 @@
     @include margin-bottom;
     max-height: 1.25rem;
     max-width: 7.5rem;
+
+    @include tablet {
+      display: none;
+    }
   }
   &__copyright {
     font-size: 0.6875rem;
+    line-height: 1.25rem;
+
+    @include tablet {
+      font-size: 0.8125rem;
+    }
   }
 }

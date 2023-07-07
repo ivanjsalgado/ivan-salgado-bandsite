@@ -223,7 +223,7 @@
   font-size: 0.8125rem;
   line-height: 1.125rem;
   margin-bottom: 1rem;
-  width: 35vw;
+  width: 87vw;
 }
 @media screen and (min-width: 768px) {
   .about__paragraph-two {
@@ -261,22 +261,58 @@
     margin-bottom: 2.25rem;
   }
 }
+.gallery__image-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .gallery__image-container {
+    flex-direction: row;
+    width: 93vw;
+    flex-wrap: wrap;
+  }
+}
 .gallery__image {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__image {
-    width: 27vw;
+    width: 28vw;
+    margin-right: 1.3rem;
   }
 }
 
 .footer {
   background-color: #323232;
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
   padding-left: 1rem;
   padding-bottom: 1rem;
   font-size: 0.8125rem;
   line-height: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__socials {
+    flex-direction: row;
+    width: 89vw;
+    justify-content: space-between;
+    margin-bottom: 2.25rem;
+    padding-top: 3rem;
+    align-items: center;
+  }
 }
 .footer__title {
   font-family: "Avenir-2";
@@ -285,9 +321,22 @@
   padding-top: 1.5rem;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__title {
+    margin-bottom: 0;
+    padding-top: 0;
+    font-size: 2.25rem;
+  }
+}
 .footer__logos {
   display: flex;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__logos {
+    margin-right: 9.25rem;
+    margin-bottom: 0;
+  }
 }
 .footer__logo {
   height: 1.5625rem;
@@ -300,11 +349,38 @@
   max-height: 1.25rem;
   max-width: 7.5rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__bandsite-logo {
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 7.5rem;
+  }
+}
 .footer__contacts {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 89vw;
+  }
+}
+.footer__cam-container {
+  display: flex;
+  flex-direction: column;
 }
 .footer__cam {
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__cam {
+    margin-bottom: 2.25rem;
+  }
 }
 .footer__cam--bold {
   font-family: "Avenir-2";
@@ -312,11 +388,30 @@
 .footer__bees-address {
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__bees-address {
+    margin-bottom: 2.25rem;
+  }
+}
 .footer__bees-email {
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__bees-email {
+    margin-bottom: 2.25rem;
+  }
+}
+.footer__pearl-container {
+  display: flex;
+  flex-direction: column;
+}
 .footer__pearl {
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__pearl {
+    margin-bottom: 2.25rem;
+  }
 }
 .footer__pearl--bold {
   font-family: "Avenir-2";
@@ -324,11 +419,35 @@
 .footer__limit-description {
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__limit-description {
+    margin-bottom: 2.25rem;
+  }
+}
 .footer__limit-email {
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__limit-email {
+    margin-bottom: 2.25rem;
+  }
+}
+.footer__carson-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__carson-container {
+    margin-right: 0.5rem;
+  }
+}
 .footer__carson {
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__carson {
+    margin-bottom: 2.25rem;
+  }
 }
 .footer__carson--bold {
   font-family: "Avenir-2";
@@ -336,12 +455,28 @@
 .footer__arch-description {
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__arch-description {
+    margin-bottom: 2.25rem;
+  }
+}
 .footer__bandsite-logo-two {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   max-height: 1.25rem;
   max-width: 7.5rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__bandsite-logo-two {
+    display: none;
+  }
+}
 .footer__copyright {
   font-size: 0.6875rem;
+  line-height: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    font-size: 0.8125rem;
+  }
 }/*# sourceMappingURL=bio.css.map */

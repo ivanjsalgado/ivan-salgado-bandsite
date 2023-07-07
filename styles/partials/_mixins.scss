@@ -28,6 +28,10 @@
   font-size: 3.75rem;
   line-height: 4.25rem;
 }
+@mixin footer-tablet-desktop {
+  font-size: 14px;
+  line-height: 20px;
+}
 @mixin margin-bottom {
   margin-bottom: 1rem;
 }
