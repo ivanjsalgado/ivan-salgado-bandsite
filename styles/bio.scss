@@ -2,12 +2,13 @@
 @use "./partials/mixins" as *;
 @use "./partials/global" as *;
 @use "./partials/variables" as *;
+@use "./partials/colors" as *;
 
 .header {
   display: flex;
   flex-direction: column;
   color: white;
-  background-color: #323232;
+  background-color: $bandsite-black;
   &__title {
     display: flex;
     height: 4vh;
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: center;
     width: 50vw;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid $white;
   }
 
   &__link {
@@ -35,7 +36,7 @@
     display: flex;
     justify-content: center;
     width: 50vw;
-    // border-bottom: 4px solid white;
+    // border-bottom: 4px solid $white;
   }
 
   &__hero {
@@ -45,7 +46,7 @@
     background-size: cover;
     box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.5);
     height: 20vh;
-    color: white;
+    color: $white;
     align-items: center;
   }
   &__hero-title {
@@ -96,7 +97,7 @@
   flex-direction: column;
   width: 100vw;
   padding: 24px 16px 0 16px;
-  background-color: #fafafa;
+  background-color: $alabaster;
 
   &__title {
     font-family: "Avenir-2";
@@ -110,8 +111,8 @@
 
 .footer {
   // This might be wrong
-  background-color: #323232;
-  color: white;
+  background-color: $bandsite-black;
+  color: $white;
   padding-left: 1rem;
   padding-bottom: 1rem;
   @include body-text;
