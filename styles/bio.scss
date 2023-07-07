@@ -1,12 +1,7 @@
-@use "./partials/typography" as *;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Avenir";
-  font-weight: 400;
-}
+@use "./partials/_typography" as *;
+@use "./partials/mixins" as *;
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
 
 .header {
   display: flex;
@@ -17,7 +12,7 @@
     display: flex;
     height: 4vh;
     padding-top: 1rem;
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
 
   &__links {
@@ -33,8 +28,7 @@
   &__link {
     display: flex;
     flex-direction: column;
-    font-size: 0.875rem;
-    line-height: 1.375rem;
+    @include subheader-text;
     margin-bottom: 0.5rem;
   }
   &__shows {
@@ -68,36 +62,31 @@
 
   &__title {
     font-family: "Avenir-2";
-    font-size: 1.5rem;
-    line-height: 2rem;
+    @include header-text;
     margin-top: 1.5rem;
   }
 
   &__image {
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
   &__quote {
     font-family: "Avenir-2";
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    margin-bottom: 1rem;
+    @include subheader-text;
+    @include margin-bottom;
   }
   &__sub-title {
     font-family: "Avenir-2";
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    margin-bottom: 1rem;
+    @include subheader-text;
+    @include margin-bottom;
   }
   &__paragraph-one {
-    font-size: 0.8125rem;
-    line-height: 1.125rem;
-    margin-bottom: 1rem;
+    @include body-text;
+    @include margin-bottom;
     width: 88vw;
   }
   &__paragraph-two {
-    font-size: 0.8125rem;
-    line-height: 1.125rem;
-    margin-bottom: 1rem;
+    @include body-text;
+    @include margin-bottom;
     width: 87vw;
   }
 }
@@ -111,12 +100,11 @@
 
   &__title {
     font-family: "Avenir-2";
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-bottom: 1rem;
+    @include header-text;
+    @include margin-bottom;
   }
   &__image {
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
 }
 
@@ -126,21 +114,19 @@
   color: white;
   padding-left: 1rem;
   padding-bottom: 1rem;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
+  @include body-text;
 
   &__title {
     // Not sure
     font-family: "Avenir-2";
-    font-size: 1.5rem;
-    line-height: 2rem;
+    @include header-text;
     padding-top: 1.5rem;
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
 
   &__logos {
     display: flex;
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
   &__logo {
     height: 1.5625rem;
@@ -149,7 +135,7 @@
   &__bandsite-logo {
     display: none;
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    @include margin-bottom;
     max-height: 1.25rem;
     max-width: 7.5rem;
   }
@@ -157,46 +143,46 @@
     margin-bottom: 3rem;
   }
   &__cam {
-    margin-bottom: 1rem;
+    @include margin-bottom;
 
     &--bold {
       font-family: "Avenir-2";
     }
   }
   &__bees-address {
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
   &__bees-email {
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
   &__pearl {
-    margin-bottom: 1rem;
+    @include margin-bottom;
 
     &--bold {
       font-family: "Avenir-2";
     }
   }
   &__limit-description {
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
   &__limit-email {
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
   &__carson {
-    margin-bottom: 1rem;
+    @include margin-bottom;
 
     &--bold {
       font-family: "Avenir-2";
     }
   }
   &__arch-description {
-    margin-bottom: 1rem;
+    @include margin-bottom;
   }
   &__arch-email {
   }
   &__bandsite-logo-two {
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    @include margin-bottom;
     max-height: 1.25rem;
     max-width: 7.5rem;
   }
