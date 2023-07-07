@@ -4,13 +4,29 @@
   font-size: 0.8125rem;
   line-height: 1.125rem;
 }
+@mixin body-text-tablet-desktop {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
 @mixin subheader-text {
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
+@mixin subheader-text-tablet-desktop {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 @mixin header-text {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+@mixin header-section-text-tablet-desktop {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+@mixin header-page-text-tablet-desktop {
+  font-size: 3.75rem;
+  line-height: 4.25rem;
 }
 @mixin margin-bottom {
   margin-bottom: 1rem;

@@ -10,18 +10,30 @@
   background-color: $bandsite-black;
   &__navbar {
     display: flex;
+
+    @include tablet {
+      padding: 1.25rem 2.5rem;
+    }
   }
   &__links {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
+
+    @include tablet {
+      flex-direction: row;
+    }
   }
   &__logo {
     display: flex;
     height: 4vh;
     padding-top: 1rem;
     @include margin-bottom;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
   &__link-container {
     display: flex;
@@ -31,6 +43,10 @@
     width: 50vw;
     border-bottom: 4px solid $white;
     justify-content: center;
+
+    @include tablet {
+      width: 9vw;
+    }
   }
   &__bio {
     display: flex;
@@ -43,6 +59,10 @@
     width: 50vw;
     justify-content: center;
     // border-bottom: 4px solid $white;
+
+    @include tablet {
+      width: 9vw;
+    }
   }
   &__shows {
     display: flex;
@@ -64,6 +84,12 @@
   &__hero-title {
     font-size: 1.5rem;
     margin-left: 1rem;
+
+    @include tablet {
+      margin-left: 2.5rem;
+      @include header-page-text-tablet-desktop;
+      // @include header-section-text-tablet-desktop;
+    }
   }
 }
 
@@ -73,34 +99,99 @@
   width: 90vw;
   margin-left: 1rem;
 
+  @include tablet {
+    margin-left: 2.5rem;
+  }
+
   &__title {
     font-family: "Avenir-2";
     @include header-text;
     margin-top: 1.5rem;
+
+    @include tablet {
+      margin-top: 2.5rem;
+      margin-bottom: 2.25rem;
+      @include header-section-text-tablet-desktop;
+    }
   }
 
   &__image {
     @include margin-bottom;
+
+    @include tablet {
+      margin: 0 auto 2.25rem auto;
+      width: 75vw;
+    }
   }
   &__quote {
     font-family: "Avenir-2";
     @include subheader-text;
+    // @include margin-bottom;
+
+    @include tablet {
+      margin: 0 auto;
+      width: 75vw;
+      @include subheader-text-tablet-desktop;
+    }
+  }
+  &__author {
+    font-family: "Avenir-2";
+    @include subheader-text;
     @include margin-bottom;
+    margin-top: 1rem;
+
+    @include tablet {
+      // Made this 24px instead of 36px, visually looks better
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      margin-left: 3.5rem;
+    }
   }
   &__sub-title {
     font-family: "Avenir-2";
     @include subheader-text;
     @include margin-bottom;
+
+    @include tablet {
+      margin-left: 3.5rem;
+      margin-bottom: 24px;
+      margin-top: 40px;
+      @include subheader-text-tablet-desktop;
+    }
+  }
+  &__paragraphs {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      margin-left: 3.5rem;
+      width: 78vw;
+      padding-bottom: 2.25rem;
+    }
   }
   &__paragraph-one {
     @include body-text;
     @include margin-bottom;
     width: 88vw;
+
+    @include tablet {
+      width: 36vw;
+      @include body-text-tablet-desktop;
+      margin-bottom: 0;
+    }
   }
   &__paragraph-two {
     @include body-text;
     @include margin-bottom;
-    width: 87vw;
+    width: 35vw;
+
+    @include tablet {
+      width: 36vw;
+      @include body-text-tablet-desktop;
+      margin-left: 0.625rem;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -111,13 +202,27 @@
   padding: 24px 16px 0 16px;
   background-color: $alabaster;
 
+  @include tablet {
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+  }
+
   &__title {
     font-family: "Avenir-2";
     @include header-text;
     @include margin-bottom;
+
+    @include tablet {
+      @include header-section-text-tablet-desktop;
+      margin-bottom: 2.25rem;
+    }
   }
   &__image {
     @include margin-bottom;
+
+    @include tablet {
+      width: 27vw;
+    }
   }
 }
 
