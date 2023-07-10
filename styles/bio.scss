@@ -148,6 +148,9 @@
   @include tablet {
     margin-left: 2.5rem;
   }
+  @include desktop {
+    margin-left: 8.5rem;
+  }
 
   &__title {
     font-family: "Avenir-2";
@@ -168,6 +171,9 @@
       margin: 0 auto;
       width: 75vw;
     }
+    @include desktop {
+      width: 65vw;
+    }
   }
   &__image {
     @include margin-bottom;
@@ -178,6 +184,10 @@
       margin-bottom: 2.25rem;
       width: 75vw;
       height: 35vh;
+    }
+    @include desktop {
+      width: 65vw;
+      height: 40vh;
     }
   }
   &__quote {
@@ -193,6 +203,9 @@
       // I can get
       font-size: 1.4rem;
       line-height: 2rem;
+    }
+    @include desktop {
+      width: 52vw;
     }
   }
   &__author {
@@ -243,6 +256,9 @@
       @include body-text-tablet-desktop;
       margin-bottom: 0;
     }
+    @include desktop {
+      width: 32.5vw;
+    }
   }
   &__paragraph-two {
     @include body-text;
@@ -254,6 +270,9 @@
       @include body-text-tablet-desktop;
       margin-left: 0.625rem;
       margin-bottom: 0;
+    }
+    @include desktop {
+      width: 32.5vw;
     }
   }
 }
