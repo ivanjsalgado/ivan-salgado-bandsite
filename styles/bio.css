@@ -278,8 +278,7 @@
 }
 @media screen and (min-width: 768px) {
   .gallery {
-    padding-left: 2.5rem;
-    padding-top: 3rem;
+    padding: 3rem 0rem 1rem 2.5rem;
   }
 }
 .gallery__title {
@@ -328,8 +327,7 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 0rem 2.5rem 2.5rem 2.5rem;
     font-size: 14px;
     line-height: 20px;
   }

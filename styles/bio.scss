@@ -244,8 +244,7 @@
   background-color: $alabaster;
 
   @include tablet {
-    padding-left: 2.5rem;
-    padding-top: 3rem;
+    padding: 3rem 0rem 1rem 2.5rem;
   }
 
   &__title {
@@ -289,8 +288,7 @@
   @include body-text;
 
   @include tablet {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 0rem 2.5rem 2.5rem 2.5rem;
     @include footer-tablet-desktop;
   }
 
