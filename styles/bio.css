@@ -234,7 +234,7 @@
 @media screen and (min-width: 1280px) {
   .about__image {
     width: 65vw;
-    height: 40vh;
+    height: 50vh;
   }
 }
 .about__quote {
@@ -347,7 +347,7 @@
 }
 @media screen and (min-width: 1280px) {
   .gallery {
-    padding-left: 8.5rem;
+    margin-left: 6rem;
   }
 }
 .gallery__title {

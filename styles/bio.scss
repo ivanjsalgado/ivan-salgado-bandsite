@@ -188,7 +188,7 @@
     }
     @include desktop {
       width: 65vw;
-      height: 40vh;
+      height: 50vh;
     }
   }
   &__quote {
@@ -289,7 +289,7 @@
     padding: 3rem 0rem 1rem 2.5rem;
   }
   @include desktop {
-    padding-left: 8.5rem;
+    margin-left: 6rem;
   }
 
   &__title {
