@@ -288,6 +288,9 @@
   @include tablet {
     padding: 3rem 0rem 1rem 2.5rem;
   }
+  @include desktop {
+    padding-left: 8.5rem;
+  }
 
   &__title {
     font-family: "Avenir-2";
@@ -315,6 +318,9 @@
     @include tablet {
       width: 28vw;
       margin-right: 1.3rem;
+    }
+    @include desktop {
+      width: 25vw;
     }
   }
 }

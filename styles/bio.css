@@ -345,6 +345,11 @@
     padding: 3rem 0rem 1rem 2.5rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .gallery {
+    padding-left: 8.5rem;
+  }
+}
 .gallery__title {
   font-family: "Avenir-2";
   font-size: 1.5rem;
@@ -376,6 +381,11 @@
   .gallery__image {
     width: 28vw;
     margin-right: 1.3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery__image {
+    width: 25vw;
   }
 }
 
