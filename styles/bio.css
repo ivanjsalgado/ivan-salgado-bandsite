@@ -35,6 +35,11 @@
     padding: 0.625rem 0rem 0rem 2.5rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .header__navbar {
+    padding-left: 8.5rem;
+  }
+}
 .header__links {
   display: flex;
   flex-direction: column;
@@ -59,6 +64,11 @@
     margin-right: 3.25rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .header__logo {
+    height: 3.5vh;
+  }
+}
 .header__link-container {
   display: flex;
 }
@@ -74,6 +84,12 @@
     width: 9vw;
     margin-right: 3.25rem;
     padding-bottom: 1.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__link-bio {
+    width: 5vw;
+    margin-right: 0rem;
   }
 }
 .header__bio {
@@ -152,6 +168,7 @@
   .header__hero-title {
     margin-bottom: 2rem;
     margin-left: 8.5rem;
+    font-size: 3.75rem;
   }
 }
 

@@ -17,6 +17,9 @@
       // padding: 1.25rem 2.5rem;
       padding: 0.625rem 0rem 0rem 2.5rem;
     }
+    @include desktop {
+      padding-left: 8.5rem;
+    }
   }
   &__links {
     display: flex;
@@ -39,6 +42,9 @@
       margin-bottom: 1.5rem;
       margin-right: 3.25rem;
     }
+    @include desktop {
+      height: 3.5vh;
+    }
   }
   &__link-container {
     display: flex;
@@ -54,6 +60,10 @@
       width: 9vw;
       margin-right: 3.25rem;
       padding-bottom: 1.25rem;
+    }
+    @include desktop {
+      width: 5vw;
+      margin-right: 0rem;
     }
   }
   &__bio {
@@ -123,6 +133,7 @@
     @include desktop {
       margin-bottom: 2rem;
       margin-left: 8.5rem;
+      font-size: 3.75rem;
     }
   }
 }
