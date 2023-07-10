@@ -94,8 +94,9 @@
   &__hero {
     display: flex;
     background-image: url(../assets/images/hero-bio.jpg);
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.5);
     height: 24vh;
     color: $white;
@@ -112,6 +113,7 @@
     @include tablet {
       margin-left: 2.5rem;
       @include header-page-text-tablet-desktop;
+      margin-bottom: 4rem;
       // @include header-section-text-tablet-desktop;
     }
   }
