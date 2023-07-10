@@ -364,7 +364,7 @@
   @include body-text;
 
   @include tablet {
-    @include footer-tablet-desktop;
+    font-size: 14.5px;
   }
 
   &__socials {
@@ -468,7 +468,7 @@
     @include margin-bottom;
 
     @include tablet {
-      margin-bottom: 2.25rem;
+      margin-bottom: 0;
     }
   }
   &__pearl-container {
@@ -500,7 +500,7 @@
     @include margin-bottom;
 
     @include tablet {
-      margin-bottom: 2.25rem;
+      margin-bottom: 0;
     }
   }
   &__carson-container {
@@ -554,6 +554,7 @@
     }
   }
 }
+
 * {
   border: 1px solid red;
 }
