@@ -105,6 +105,10 @@
     @include tablet {
       height: 45vh;
     }
+    @include desktop {
+      height: 64vh;
+      background-position: left bottom -8.5rem;
+    }
   }
   &__hero-title {
     font-size: 1.5rem;
@@ -115,6 +119,10 @@
       @include header-page-text-tablet-desktop;
       margin-bottom: 4rem;
       // @include header-section-text-tablet-desktop;
+    }
+    @include desktop {
+      margin-bottom: 2rem;
+      margin-left: 8.5rem;
     }
   }
 }

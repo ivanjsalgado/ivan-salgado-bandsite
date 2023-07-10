@@ -130,6 +130,12 @@
     height: 45vh;
   }
 }
+@media screen and (min-width: 1280px) {
+  .header__hero {
+    height: 64vh;
+    background-position: left bottom -8.5rem;
+  }
+}
 .header__hero-title {
   font-size: 1.5rem;
   margin-left: 1rem;
@@ -140,6 +146,12 @@
     font-size: 3.75rem;
     line-height: 4.25rem;
     margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__hero-title {
+    margin-bottom: 2rem;
+    margin-left: 8.5rem;
   }
 }
 
