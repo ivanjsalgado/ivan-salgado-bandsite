@@ -14,7 +14,6 @@
     display: flex;
 
     @include tablet {
-      // padding: 1.25rem 2.5rem;
       padding: 0.625rem 0rem 0rem 2.5rem;
     }
     @include desktop {
@@ -34,7 +33,6 @@
   }
   &__logo {
     display: flex;
-    height: 4vh;
     padding-top: 1rem;
     @include margin-bottom;
 
@@ -129,7 +127,6 @@
       margin-left: 2.5rem;
       @include header-page-text-tablet-desktop;
       margin-bottom: 4rem;
-      // @include header-section-text-tablet-desktop;
     }
     @include desktop {
       margin-bottom: 2rem;
@@ -141,15 +138,23 @@
 
 .about {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-content: center;
-  width: 100vw;
-  padding: 1.5rem 1rem 0 1rem;
+  // width: 100vw;
+  padding-top: 1.5rem;
 
   @include tablet {
+    padding: 0;
   }
   @include desktop {
+  }
+  &__title-container {
+    display: flex;
+    padding-left: 1rem;
+
+    @include tablet {
+      margin-left: 3.5rem;
+      margin-top: 2.5rem;
+    }
   }
 
   &__title {
@@ -157,17 +162,18 @@
     @include header-text;
 
     @include tablet {
-      margin-top: 2.5rem;
-      margin-bottom: 2.25rem;
+      padding-bottom: 2.25rem;
       @include header-section-text-tablet-desktop;
     }
   }
   &__container {
     display: flex;
     flex-direction: column;
+    padding: 0rem 1rem 0rem 1rem;
 
     @include tablet {
-      width: 75vw;
+      width: 100vw;
+      align-items: center;
     }
     @include desktop {
       width: 65vw;
@@ -180,7 +186,7 @@
     @include tablet {
       margin-top: 0;
       margin-bottom: 2.25rem;
-      width: 75vw;
+      width: 70vw;
       height: 35vh;
     }
     @include desktop {
@@ -192,15 +198,10 @@
   &__quote {
     font-family: "Avenir-2";
     @include subheader-text;
-    // @include margin-bottom;
 
     @include tablet {
-      // margin: 0 auto;
-      width: 75vw;
-      // @include subheader-text-tablet-desktop;
-      // Should be set to what's on top but this is the closest
-      // I can get
-      font-size: 1.4rem;
+      width: 70vw;
+      font-size: 1.3rem;
       line-height: 2rem;
     }
     @include desktop {
@@ -208,6 +209,7 @@
       width: 52vw;
     }
   }
+
   &__author {
     font-family: "Avenir-2";
     @include subheader-text;
@@ -215,12 +217,10 @@
     margin-top: 1rem;
 
     @include tablet {
-      // Made this 24px instead of 36px, visually looks better
       margin-top: 1.5rem;
       margin-bottom: 0;
-      // Should be 0.875 but this is closer to mockup
+      width: 70vw;
       font-size: 1rem;
-      // margin-left: 3.5rem;
     }
     @include desktop {
       display: flex;
@@ -232,7 +232,7 @@
     @include margin-bottom;
 
     @include tablet {
-      // margin-left: 3.5rem;
+      width: 70vw;
       margin-bottom: 24px;
       margin-top: 40px;
       @include subheader-text-tablet-desktop;
@@ -247,8 +247,7 @@
 
     @include tablet {
       flex-direction: row;
-      // margin-left: 3.5rem;
-      width: 78vw;
+      width: 70vw;
       padding-bottom: 2.25rem;
     }
   }
@@ -258,7 +257,7 @@
     width: 88vw;
 
     @include tablet {
-      width: 36vw;
+      width: 35vw;
       @include body-text-tablet-desktop;
       margin-bottom: 0;
     }
@@ -272,7 +271,7 @@
     width: 87vw;
 
     @include tablet {
-      width: 36vw;
+      width: 35vw;
       @include body-text-tablet-desktop;
       margin-left: 0.625rem;
       margin-bottom: 0;
@@ -286,12 +285,10 @@
 .gallery {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  padding: 24px 16px 0 16px;
   background-color: $alabaster;
 
   @include tablet {
-    padding: 3rem 0rem 1rem 2.5rem;
+    padding: 3.5rem 1rem;
   }
   @include desktop {
     padding: 0;
@@ -301,8 +298,12 @@
     font-family: "Avenir-2";
     @include header-text;
     @include margin-bottom;
+    padding: 1.5rem 0rem 0rem 1rem;
 
     @include tablet {
+      display: flex;
+      width: 100vw;
+      margin-left: 3.5rem;
       @include header-section-text-tablet-desktop;
       margin-bottom: 2.25rem;
     }
@@ -310,11 +311,12 @@
   &__image-container {
     display: flex;
     flex-direction: column;
+    padding: 0rem 1rem 0rem 1rem;
 
     @include tablet {
       flex-direction: row;
-      width: 93vw;
       flex-wrap: wrap;
+      justify-content: center;
     }
     @include desktop {
       width: 82vw;
@@ -324,11 +326,23 @@
     @include margin-bottom;
 
     @include tablet {
-      width: 28vw;
-      margin-right: 1.3rem;
+      width: 27vw;
+      margin-bottom: 0;
     }
     @include desktop {
       width: 25vw;
+    }
+  }
+  &__image-middle {
+    @include tablet {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+  &__image-center {
+    @include tablet {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -339,8 +353,6 @@
   display: flex;
   flex-direction: column;
   color: $white;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
   @include body-text;
 
   @include tablet {
@@ -351,6 +363,7 @@
   &__socials {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
 
     @include tablet {
       flex-direction: row;
@@ -363,7 +376,6 @@
   }
 
   &__title {
-    // Not sure
     font-family: "Avenir-2";
     @include header-text;
     padding-top: 1.5rem;
@@ -408,6 +420,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
+    padding-left: 1rem;
 
     @include tablet {
       flex-direction: row;
@@ -512,6 +525,7 @@
     @include margin-bottom;
     max-height: 1.25rem;
     max-width: 7.5rem;
+    padding-left: 1rem;
 
     @include tablet {
       display: none;
@@ -520,6 +534,7 @@
   &__copyright {
     font-size: 0.6875rem;
     line-height: 1.25rem;
+    padding-left: 1rem;
 
     @include tablet {
       font-size: 0.8125rem;
