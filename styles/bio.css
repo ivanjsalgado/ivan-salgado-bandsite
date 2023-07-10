@@ -215,7 +215,8 @@
 }
 @media screen and (min-width: 1280px) {
   .about__container {
-    width: 65vw;
+    width: 55vw;
+    margin-left: 5.5rem;
   }
 }
 .about__image {

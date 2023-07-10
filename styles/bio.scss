@@ -172,7 +172,8 @@
       width: 75vw;
     }
     @include desktop {
-      width: 65vw;
+      width: 55vw;
+      margin-left: 5.5rem;
     }
   }
   &__image {
