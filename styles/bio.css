@@ -193,6 +193,11 @@
     padding-top: 2.5rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__title-container {
+    margin-left: 8.5rem;
+  }
+}
 .about__title {
   font-family: "Avenir-2";
   font-size: 1.5rem;
@@ -217,11 +222,6 @@
     padding: 0;
   }
 }
-@media screen and (min-width: 1280px) {
-  .about__container {
-    width: 65vw;
-  }
-}
 .about__image {
   margin-bottom: 1rem;
   height: 19vh;
@@ -236,12 +236,12 @@
 }
 @media screen and (min-width: 1280px) {
   .about__image {
-    display: flex;
     width: 65vw;
     height: 50vh;
   }
 }
 .about__quote {
+  display: flex;
   font-family: "Avenir-2";
   font-size: 0.875rem;
   line-height: 1.375rem;
@@ -255,8 +255,8 @@
 }
 @media screen and (min-width: 1280px) {
   .about__quote {
-    display: flex;
-    width: 52vw;
+    width: 65vw;
+    padding-right: 10rem;
   }
 }
 .about__author {
@@ -276,7 +276,7 @@
 }
 @media screen and (min-width: 1280px) {
   .about__author {
-    display: flex;
+    width: 65vw;
   }
 }
 .about__sub-title {
@@ -296,7 +296,7 @@
 }
 @media screen and (min-width: 1280px) {
   .about__sub-title {
-    display: flex;
+    width: 65vw;
   }
 }
 .about__paragraphs {
@@ -308,6 +308,11 @@
     flex-direction: row;
     width: 75vw;
     padding-bottom: 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__paragraphs {
+    width: 65vw;
   }
 }
 .about__paragraph-one {
@@ -355,9 +360,20 @@
   flex-direction: column;
   background-color: #fafafa;
 }
+.gallery__title-container {
+  display: flex;
+  padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title-container {
+    margin-left: 2.25rem;
+    padding-left: 0rem;
+    padding-top: 2.5rem;
+  }
+}
 @media screen and (min-width: 1280px) {
-  .gallery {
-    padding: 0;
+  .gallery__title-container {
+    margin-left: 8.5rem;
   }
 }
 .gallery__title {
@@ -369,15 +385,10 @@
 }
 @media screen and (min-width: 768px) {
   .gallery__title {
-    display: flex;
-    width: 100vw;
-    padding-top: 2.5rem;
-    margin-left: 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
-    padding-bottom: 2.25rem;
+    padding: 0 0 2.25rem 0;
     margin-bottom: 0;
-    padding-left: 0;
   }
 }
 .gallery__image-container {
@@ -393,11 +404,6 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 2.25rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .gallery__image-container {
-    width: 82vw;
   }
 }
 .gallery__image {
@@ -628,8 +634,4 @@
     padding-left: 2.25rem;
     padding-bottom: 2.25rem;
   }
-}
-
-* {
-  border: 1px solid red;
 }/*# sourceMappingURL=bio.css.map */

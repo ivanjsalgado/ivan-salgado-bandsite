@@ -139,7 +139,6 @@
 .about {
   display: flex;
   flex-direction: column;
-  // width: 100vw;
   padding-top: 1.5rem;
 
   @include tablet {
@@ -155,6 +154,10 @@
       margin-left: 2.25rem;
       padding-left: 0rem;
       padding-top: 2.5rem;
+    }
+
+    @include desktop {
+      margin-left: 8.5rem;
     }
   }
 
@@ -177,9 +180,6 @@
       align-items: center;
       padding: 0;
     }
-    @include desktop {
-      width: 65vw;
-    }
   }
   &__image {
     @include margin-bottom;
@@ -192,12 +192,13 @@
       height: 35vh;
     }
     @include desktop {
-      display: flex;
       width: 65vw;
       height: 50vh;
     }
   }
+
   &__quote {
+    display: flex;
     font-family: "Avenir-2";
     @include subheader-text;
 
@@ -207,8 +208,8 @@
       line-height: 2rem;
     }
     @include desktop {
-      display: flex;
-      width: 52vw;
+      width: 65vw;
+      padding-right: 10rem;
     }
   }
 
@@ -225,7 +226,7 @@
       font-size: 1rem;
     }
     @include desktop {
-      display: flex;
+      width: 65vw;
     }
   }
   &__sub-title {
@@ -240,7 +241,7 @@
       @include subheader-text-tablet-desktop;
     }
     @include desktop {
-      display: flex;
+      width: 65vw;
     }
   }
   &__paragraphs {
@@ -251,6 +252,9 @@
       flex-direction: row;
       width: 75vw;
       padding-bottom: 2.25rem;
+    }
+    @include desktop {
+      width: 65vw;
     }
   }
   &__paragraph-one {
@@ -289,11 +293,19 @@
   flex-direction: column;
   background-color: $alabaster;
 
-  @include tablet {
-    // padding: 3.5rem 1rem;
-  }
-  @include desktop {
-    padding: 0;
+  &__title-container {
+    display: flex;
+    padding-left: 1rem;
+
+    @include tablet {
+      margin-left: 2.25rem;
+      padding-left: 0rem;
+      padding-top: 2.5rem;
+    }
+
+    @include desktop {
+      margin-left: 8.5rem;
+    }
   }
 
   &__title {
@@ -303,14 +315,9 @@
     padding: 1.5rem 0rem 0rem 1rem;
 
     @include tablet {
-      display: flex;
-      width: 100vw;
-      padding-top: 2.5rem;
-      margin-left: 2.25rem;
       @include header-section-text-tablet-desktop;
-      padding-bottom: 2.25rem;
+      padding: 0 0 2.25rem 0;
       margin-bottom: 0;
-      padding-left: 0;
     }
   }
   &__image-container {
@@ -325,9 +332,6 @@
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 2.25rem;
-    }
-    @include desktop {
-      width: 82vw;
     }
   }
   &__image {
@@ -553,8 +557,4 @@
       padding-bottom: 2.25rem;
     }
   }
-}
-
-* {
-  border: 1px solid red;
 }
