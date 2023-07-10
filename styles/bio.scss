@@ -3,13 +3,12 @@
 @use "./partials/global" as *;
 @use "./partials/colors" as *;
 
-// Kyla said the selected is white, not selected is alabaster
-
 .header {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: $white;
   background-color: $bandsite-black;
+
   &__navbar {
     display: flex;
 
@@ -20,6 +19,7 @@
       padding-left: 8.5rem;
     }
   }
+
   &__links {
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@
       align-items: normal;
     }
   }
+
   &__logo {
     display: flex;
     padding-top: 1rem;
@@ -44,9 +45,11 @@
       height: 3.5vh;
     }
   }
+
   &__link-container {
     display: flex;
   }
+
   &__link-bio {
     display: flex;
     width: 50vw;
@@ -64,6 +67,7 @@
       margin-right: 0rem;
     }
   }
+
   &__bio {
     display: flex;
     justify-content: center;
@@ -75,17 +79,18 @@
       margin-bottom: 0;
     }
   }
+
   &__link-shows {
     display: flex;
     width: 50vw;
     justify-content: center;
-    // border-bottom: 4px solid $white;
 
     @include tablet {
       width: 9vw;
       padding-bottom: 1.5rem;
     }
   }
+
   &__shows {
     display: flex;
     justify-content: center;
@@ -118,6 +123,7 @@
       background-position: left bottom -8.5rem;
     }
   }
+
   &__hero-title {
     font-family: "Avenir-2";
     font-size: 1.5rem;
@@ -146,6 +152,7 @@
   }
   @include desktop {
   }
+
   &__title-container {
     display: flex;
     padding-left: 1rem;
@@ -170,6 +177,7 @@
       @include header-section-text-tablet-desktop;
     }
   }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -181,6 +189,7 @@
       padding: 0;
     }
   }
+
   &__image {
     @include margin-bottom;
     height: 19vh;
@@ -229,6 +238,7 @@
       width: 65vw;
     }
   }
+
   &__sub-title {
     font-family: "Avenir-2";
     @include subheader-text;
@@ -244,6 +254,7 @@
       width: 65vw;
     }
   }
+
   &__paragraphs {
     display: flex;
     flex-direction: column;
@@ -257,6 +268,7 @@
       width: 65vw;
     }
   }
+
   &__paragraph-one {
     @include body-text;
     @include margin-bottom;
@@ -271,6 +283,7 @@
       width: 32.5vw;
     }
   }
+
   &__paragraph-two {
     @include body-text;
     @include margin-bottom;
@@ -320,6 +333,7 @@
       margin-bottom: 0;
     }
   }
+
   &__image-container {
     display: flex;
     flex-direction: column;
@@ -334,6 +348,7 @@
       padding-bottom: 2.25rem;
     }
   }
+
   &__image {
     @include margin-bottom;
 
@@ -345,6 +360,7 @@
       width: 25vw;
     }
   }
+
   &__image-middle {
     @include tablet {
       margin-right: 1.5rem;
@@ -368,7 +384,7 @@
   @include body-text;
 
   @include tablet {
-    font-size: 14.5px;
+    font-size: 0.9063rem;
   }
 
   &__socials {
@@ -381,11 +397,14 @@
       flex-direction: row;
       padding-left: 2.25rem;
       padding-right: 2.25rem;
-      // width: 89vw;
       justify-content: space-between;
       margin-bottom: 2.25rem;
       padding-top: 2.5rem;
       align-items: center;
+    }
+    @include desktop {
+      padding-left: 8.25rem;
+      padding-right: 8.25rem;
     }
   }
 
@@ -411,10 +430,12 @@
       margin-bottom: 0;
     }
   }
+
   &__logo {
     height: 1.5625rem;
     margin-right: 1.5625rem;
   }
+
   &__bandsite-logo {
     display: none;
     margin-top: 1.5rem;
@@ -429,7 +450,11 @@
       margin-top: 0;
       height: 7.5rem;
     }
+    @include desktop {
+      margin-left: 16rem;
+    }
   }
+
   &__contacts {
     display: flex;
     flex-direction: column;
@@ -442,7 +467,12 @@
       padding-left: 2.25rem;
       padding-right: 2.25rem;
     }
+    @include desktop {
+      padding-left: 8.25rem;
+      padding-right: 8.25rem;
+    }
   }
+
   &__cam-container {
     display: flex;
     flex-direction: column;
@@ -450,6 +480,7 @@
     @include tablet {
     }
   }
+
   &__cam {
     @include margin-bottom;
 
@@ -461,6 +492,7 @@
       font-family: "Avenir-2";
     }
   }
+
   &__bees-address {
     @include margin-bottom;
 
@@ -468,6 +500,7 @@
       margin-bottom: 2.25rem;
     }
   }
+
   &__bees-email {
     @include margin-bottom;
 
@@ -475,6 +508,7 @@
       margin-bottom: 0;
     }
   }
+
   &__pearl-container {
     display: flex;
     flex-direction: column;
@@ -482,6 +516,7 @@
     @include tablet {
     }
   }
+
   &__pearl {
     @include margin-bottom;
 
@@ -493,6 +528,7 @@
       font-family: "Avenir-2";
     }
   }
+
   &__limit-description {
     @include margin-bottom;
 
@@ -500,6 +536,7 @@
       margin-bottom: 2.25rem;
     }
   }
+
   &__limit-email {
     @include margin-bottom;
 
@@ -507,6 +544,7 @@
       margin-bottom: 0;
     }
   }
+
   &__carson-container {
     display: flex;
     flex-direction: column;
@@ -514,7 +552,11 @@
     @include tablet {
       margin-right: 0.5rem;
     }
+    @include desktop {
+      margin-right: 16.5rem;
+    }
   }
+
   &__carson {
     @include margin-bottom;
 
@@ -526,6 +568,7 @@
       font-family: "Avenir-2";
     }
   }
+
   &__arch-description {
     @include margin-bottom;
 
@@ -533,8 +576,7 @@
       margin-bottom: 2.25rem;
     }
   }
-  &__arch-email {
-  }
+
   &__bandsite-logo-two {
     margin-top: 1.5rem;
     @include margin-bottom;
@@ -546,6 +588,7 @@
       display: none;
     }
   }
+
   &__copyright {
     font-size: 0.6875rem;
     line-height: 1.25rem;
@@ -555,6 +598,11 @@
       font-size: 0.8125rem;
       padding-left: 2.25rem;
       padding-bottom: 2.25rem;
+    }
+
+    @include desktop {
+      padding-right: 8.25rem;
+      padding-left: 8.25rem;
     }
   }
 }
