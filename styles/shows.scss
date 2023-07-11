@@ -13,9 +13,10 @@
   background-position: center;
   background-size: cover;
   height: 40vh;
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.5);
 
   @include tablet {
-    height: 55vh;
+    height: 65vh;
     padding-left: 2.25rem;
   }
 
@@ -34,13 +35,13 @@
     padding-right: 5rem;
 
     @include tablet {
-      font-size: 3.25rem;
+      font-size: 3.75rem;
       line-height: 3.75rem;
-      padding-right: 15rem;
+      padding-right: 6rem;
     }
   }
   &__iframe {
-    height: 15vh;
+    height: 20vh;
     width: 90vw;
 
     @include tablet {
@@ -67,9 +68,11 @@
     @include header-text;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
+    font-family: "Avenir-2";
 
     @include tablet {
-      @include header-section-text-tablet-desktop;
+      font-size: 2.5rem;
+      line-height: 2.75rem;
       padding-bottom: 2.5rem;
       padding-top: 2.5rem;
     }
@@ -82,7 +85,7 @@
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
     }
   }
   &__dates {
