@@ -14,9 +14,9 @@
   font-weight: 700;
 }
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Avenir";
   font-weight: 400;
 }
@@ -129,7 +129,8 @@
     align-items: flex-end;
   }
 }
-.header__hero {
+
+.hero {
   display: flex;
   background-image: url(../assets/images/hero-bio.jpg);
   background-position: bottom;
@@ -141,23 +142,23 @@
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .header__hero {
+  .hero {
     height: 45vh;
   }
 }
 @media screen and (min-width: 1280px) {
-  .header__hero {
+  .hero {
     height: 64vh;
     background-position: left bottom -8.5rem;
   }
 }
-.header__hero-title {
+.hero__title {
   font-family: "Avenir-2";
   font-size: 1.5rem;
   margin-left: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .header__hero-title {
+  .hero__title {
     margin-left: 2.25rem;
     font-size: 3.75rem;
     line-height: 4.25rem;
@@ -165,7 +166,7 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .header__hero-title {
+  .hero__title {
     margin-bottom: 2rem;
     margin-left: 8.5rem;
     font-size: 3.75rem;
@@ -288,8 +289,8 @@
 @media screen and (min-width: 768px) {
   .about__sub-title {
     width: 75vw;
-    margin-bottom: 24px;
-    margin-top: 40px;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -401,9 +402,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 2.25rem;
+    padding: 0rem 0rem 2.25rem 0rem;
   }
 }
 .gallery__image {
@@ -451,16 +450,12 @@
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
-  position: relative;
 }
 @media screen and (min-width: 768px) {
   .footer__socials {
     flex-direction: row;
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding: 2.5rem 2.25rem 2.25rem 2.25rem;
     justify-content: space-between;
-    margin-bottom: 2.25rem;
-    padding-top: 2.5rem;
     align-items: center;
   }
 }
@@ -468,15 +463,6 @@
   .footer__socials {
     padding-left: 8.25rem;
     padding-right: 8.25rem;
-  }
-}
-.footer__socials-container {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .footer__socials-container {
-    flex-direction: row;
   }
 }
 .footer__title {
@@ -616,12 +602,12 @@
 }
 @media screen and (min-width: 768px) {
   .footer__carson-container {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__carson-container {
-    margin-right: 16.5rem;
+    margin-right: 17rem;
   }
 }
 .footer__carson {
@@ -672,4 +658,8 @@
     padding-right: 8.25rem;
     padding-left: 8.25rem;
   }
+}
+
+* {
+  border: 0.25px solid red;
 }/*# sourceMappingURL=bio.css.map */
