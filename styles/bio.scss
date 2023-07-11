@@ -131,7 +131,8 @@
 
     @include tablet {
       margin-left: 2.25rem;
-      @include header-page-text-tablet-desktop;
+      font-size: 3.75rem;
+      line-height: 4.25rem;
       margin-bottom: 4rem;
     }
     @include desktop {
@@ -209,7 +210,7 @@
   &__quote {
     display: flex;
     font-family: "Avenir-2";
-    @include subheader-text;
+    @include body-text;
 
     @include tablet {
       width: 75vw;
@@ -224,7 +225,7 @@
 
   &__author {
     font-family: "Avenir-2";
-    @include subheader-text;
+    @include body-text;
     @include margin-bottom;
     margin-top: 1rem;
 
@@ -241,7 +242,7 @@
 
   &__sub-title {
     font-family: "Avenir-2";
-    @include subheader-text;
+    @include body-text;
     @include margin-bottom;
 
     @include tablet {
@@ -376,7 +377,6 @@
 }
 
 .footer {
-  // This might be wrong
   background-color: $bandsite-black;
   display: flex;
   flex-direction: column;
@@ -384,7 +384,7 @@
   @include body-text;
 
   @include tablet {
-    font-size: 0.9063rem;
+    @include subheader-text;
   }
 
   &__socials {
@@ -408,6 +408,15 @@
     }
   }
 
+  &__socials-container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
   &__title {
     font-family: "Avenir-2";
     @include header-text;
@@ -418,6 +427,8 @@
       margin-bottom: 0;
       padding-top: 0;
       font-size: 2.25rem;
+    }
+    @include desktop {
     }
   }
 
@@ -476,9 +487,6 @@
   &__cam-container {
     display: flex;
     flex-direction: column;
-
-    @include tablet {
-    }
   }
 
   &__cam {
@@ -512,9 +520,6 @@
   &__pearl-container {
     display: flex;
     flex-direction: column;
-
-    @include tablet {
-    }
   }
 
   &__pearl {
