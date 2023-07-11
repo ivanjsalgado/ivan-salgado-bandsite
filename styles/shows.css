@@ -59,6 +59,7 @@
   .hero__container {
     flex-direction: row;
     padding-bottom: 5rem;
+    align-items: center;
   }
 }
 .hero__heading {
