@@ -14,10 +14,10 @@
   font-weight: 700;
 }
 .hero {
-  padding-left: 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
   background-image: url(../assets/images/hero-shows.jpg);
   background-position: center;
@@ -27,8 +27,17 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 65vh;
+    height: 55vh;
     padding-left: 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    justify-content: center;
+    padding-left: 8.25rem;
+    padding-right: 8.25rem;
+    height: 70vh;
+    background-position: 40% 35%;
   }
 }
 .hero__album {
@@ -40,13 +49,24 @@
   .hero__album {
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-bottom: 2.25rem;
+  }
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    flex-direction: row;
+    padding-bottom: 5rem;
   }
 }
 .hero__heading {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "Avenir-3";
-  padding-right: 5rem;
+  padding: 1rem 2rem 1rem 0;
 }
 @media screen and (min-width: 768px) {
   .hero__heading {
@@ -55,13 +75,26 @@
     padding-right: 6rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero__heading {
+    margin-right: 0;
+    width: 44vw;
+    padding-right: 2rem;
+  }
+}
 .hero__iframe {
-  height: 20vh;
+  height: 15vh;
   width: 90vw;
 }
 @media screen and (min-width: 768px) {
   .hero__iframe {
     width: 50vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__iframe {
+    width: 35vw;
+    height: 15vh;
   }
 }
 
@@ -79,6 +112,11 @@
     line-height: 1.375rem;
     padding-left: 2.25rem;
     padding-right: 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows {
+    flex-direction: row;
   }
 }
 .shows__title {
