@@ -17,7 +17,7 @@
 
   @include tablet {
     height: 55vh;
-    padding-left: 2.25rem;
+    padding: 0 0 0 2.25rem;
   }
 
   @include desktop {
@@ -34,7 +34,6 @@
 
     @include tablet {
       @include subheader-text-tablet-desktop;
-      margin-bottom: 2.25rem;
     }
   }
 
@@ -56,7 +55,7 @@
     @include tablet {
       font-size: 3.75rem;
       line-height: 3.75rem;
-      padding-right: 6rem;
+      padding: 2.25rem 6rem 2.25rem 0;
     }
     @include desktop {
       margin-right: 0;
@@ -69,7 +68,7 @@
     width: 90vw;
 
     @include tablet {
-      width: 50vw;
+      width: 57vw;
     }
     @include desktop {
       width: 35vw;
