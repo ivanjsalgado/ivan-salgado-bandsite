@@ -1,0 +1,76 @@
+@use "./partials/_typography" as *;
+@use "./partials/_mixins" as *;
+@use "./partials/colors" as *;
+@use "./partials/variables" as *;
+
+.hero {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-image: url(../assets/images/hero-shows.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+
+  &__album {
+    @include body-text-tablet-desktop;
+  }
+
+  &__heading {
+    @include header-text;
+    font-family: "Avenir-2";
+    padding-right: 5rem;
+  }
+  &__iframe {
+    height: 15vh;
+    width: 90vw;
+  }
+}
+
+.shows {
+  // Is this right?
+  @include subheader-text;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid $mercury;
+  &__title {
+    @include header-text;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  &__container {
+  }
+  &__dates {
+    padding-bottom: 1rem;
+  }
+  &__small-text {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: $silver;
+  }
+  &__middle-text {
+    font-size: 1rem;
+
+    &--bold {
+      font-family: "Avenir-2";
+    }
+  }
+  &__venue {
+    padding-bottom: 1rem;
+  }
+  &__location {
+    padding-bottom: 1rem;
+  }
+  &__button {
+    width: 90vw;
+    background-color: $bandsite-black;
+    color: $white;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: "Avenir-2";
+    margin-bottom: 1rem;
+  }
+}
