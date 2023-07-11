@@ -24,33 +24,87 @@
   background-size: cover;
   height: 40vh;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 55vh;
+    padding-left: 2.25rem;
+  }
+}
 .hero__album {
+  font-family: "Avenir-2";
   font-size: 0.875rem;
   line-height: 1.375rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__album {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 .hero__heading {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "Avenir-2";
+  font-family: "Avenir-3";
   padding-right: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 3.25rem;
+    line-height: 3.75rem;
+    padding-right: 15rem;
+  }
 }
 .hero__iframe {
   height: 15vh;
   width: 90vw;
 }
+@media screen and (min-width: 768px) {
+  .hero__iframe {
+    width: 50vw;
+  }
+}
 
 .shows {
+  display: flex;
+  flex-direction: column;
   font-size: 0.875rem;
   line-height: 1.375rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-bottom: 1px solid #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .shows {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
 }
 .shows__title {
   font-size: 1.5rem;
   line-height: 2rem;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+  }
+}
+.shows__container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .shows__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 .shows__dates {
   padding-bottom: 1rem;
@@ -60,8 +114,18 @@
   line-height: 1.125rem;
   color: #afafaf;
 }
+@media screen and (min-width: 768px) {
+  .shows__small-text {
+    padding-bottom: 1.5rem;
+  }
+}
 .shows__middle-text {
   font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__middle-text {
+    padding-bottom: 1.5rem;
+  }
 }
 .shows__middle-text--bold {
   font-family: "Avenir-2";
@@ -72,6 +136,15 @@
 .shows__location {
   padding-bottom: 1rem;
 }
+.shows__button-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .shows__button-container {
+    flex-direction: row;
+  }
+}
 .shows__button {
   width: 90vw;
   background-color: #323232;
@@ -81,4 +154,10 @@
   font-size: 1rem;
   font-family: "Avenir-2";
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__button {
+    width: 22vw;
+    height: 7vh;
+  }
 }/*# sourceMappingURL=shows.css.map */

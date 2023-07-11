@@ -14,33 +14,76 @@
   background-size: cover;
   height: 40vh;
 
+  @include tablet {
+    height: 55vh;
+    padding-left: 2.25rem;
+  }
+
   &__album {
+    font-family: "Avenir-2";
     @include body-text-tablet-desktop;
+
+    @include tablet {
+      @include subheader-text-tablet-desktop;
+    }
   }
 
   &__heading {
     @include header-text;
-    font-family: "Avenir-2";
+    font-family: "Avenir-3";
     padding-right: 5rem;
+
+    @include tablet {
+      font-size: 3.25rem;
+      line-height: 3.75rem;
+      padding-right: 15rem;
+    }
   }
   &__iframe {
     height: 15vh;
     width: 90vw;
+
+    @include tablet {
+      width: 50vw;
+    }
   }
 }
 
 .shows {
+  display: flex;
+  flex-direction: column;
   // Is this right?
   @include subheader-text;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-bottom: 1px solid $mercury;
+
+  @include tablet {
+    @include body-text-tablet-desktop;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
   &__title {
     @include header-text;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
+
+    @include tablet {
+      @include header-section-text-tablet-desktop;
+      padding-bottom: 2.5rem;
+      padding-top: 2.5rem;
+    }
   }
   &__container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $mercury;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
   }
   &__dates {
     padding-bottom: 1rem;
@@ -49,9 +92,17 @@
     font-size: 0.8125rem;
     line-height: 1.125rem;
     color: $silver;
+
+    @include tablet {
+      padding-bottom: 1.5rem;
+    }
   }
   &__middle-text {
     font-size: 1rem;
+
+    @include tablet {
+      padding-bottom: 1.5rem;
+    }
 
     &--bold {
       font-family: "Avenir-2";
@@ -63,6 +114,14 @@
   &__location {
     padding-bottom: 1rem;
   }
+  &__button-container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
   &__button {
     width: 90vw;
     background-color: $bandsite-black;
@@ -72,5 +131,10 @@
     font-size: 1rem;
     font-family: "Avenir-2";
     margin-bottom: 1rem;
+
+    @include tablet {
+      width: 22vw;
+      height: 7vh;
+    }
   }
 }
