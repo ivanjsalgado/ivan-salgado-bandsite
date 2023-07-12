@@ -137,6 +137,7 @@
 
     @include desktop {
       padding-bottom: 0;
+      width: 12vw;
     }
   }
   &__small-text {
@@ -166,6 +167,7 @@
     padding-bottom: 1rem;
     @include desktop {
       padding-bottom: 0;
+      width: 12vw;
     }
   }
   &__location {
@@ -173,6 +175,7 @@
 
     @include desktop {
       padding-bottom: 0;
+      width: 12vw;
     }
   }
   &__button-container {
