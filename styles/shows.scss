@@ -167,7 +167,7 @@
   }
   &__venue {
     @include tablet {
-      width: 19vw;
+      width: 15vw;
     }
     @include desktop {
       width: 12vw;
@@ -176,7 +176,7 @@
   &__location {
     padding-bottom: 1rem;
     @include tablet {
-      width: 19vw;
+      width: 17vw;
       padding-bottom: 0;
     }
     @include desktop {
@@ -207,7 +207,7 @@
     height: 5vh;
 
     @include tablet {
-      width: 24vw;
+      width: 22vw;
       height: 6vh;
     }
     @include desktop {

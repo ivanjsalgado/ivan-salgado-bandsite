@@ -201,7 +201,7 @@
 }
 @media screen and (min-width: 768px) {
   .shows__venue {
-    width: 19vw;
+    width: 15vw;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -214,7 +214,7 @@
 }
 @media screen and (min-width: 768px) {
   .shows__location {
-    width: 19vw;
+    width: 17vw;
     padding-bottom: 0;
   }
 }
@@ -249,7 +249,7 @@
 }
 @media screen and (min-width: 768px) {
   .shows__button {
-    width: 24vw;
+    width: 22vw;
     height: 6vh;
   }
 }
