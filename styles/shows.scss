@@ -93,6 +93,8 @@
   }
   @include desktop {
     flex-direction: row;
+    padding: 0;
+    align-items: baseline;
   }
 
   &__title {
@@ -107,6 +109,10 @@
       padding-bottom: 2.5rem;
       padding-top: 2.5rem;
     }
+    @include desktop {
+      padding-left: 8.5rem;
+      padding-right: 8.5rem;
+    }
   }
   &__container {
     display: flex;
@@ -117,6 +123,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+    }
+    @include desktop {
+      padding-right: 8.5rem;
+      flex-grow: 1;
     }
   }
   &__dates {
@@ -169,6 +179,9 @@
     @include tablet {
       width: 22vw;
       height: 7vh;
+    }
+    @include desktop {
+      width: 10vw;
     }
   }
 }

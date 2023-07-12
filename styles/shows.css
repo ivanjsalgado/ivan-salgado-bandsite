@@ -117,6 +117,8 @@
 @media screen and (min-width: 1280px) {
   .shows {
     flex-direction: row;
+    padding: 0;
+    align-items: baseline;
   }
 }
 .shows__title {
@@ -134,6 +136,12 @@
     padding-top: 2.5rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .shows__title {
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+  }
+}
 .shows__container {
   display: flex;
   flex-direction: column;
@@ -144,6 +152,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows__container {
+    padding-right: 8.5rem;
+    flex-grow: 1;
   }
 }
 .shows__dates {
@@ -199,5 +213,10 @@
   .shows__button {
     width: 22vw;
     height: 7vh;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows__button {
+    width: 10vw;
   }
 }/*# sourceMappingURL=shows.css.map */
