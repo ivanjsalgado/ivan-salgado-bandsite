@@ -90,11 +90,15 @@
     @include body-text-tablet-desktop;
     padding-left: 2.25rem;
     padding-right: 2.25rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
   }
   @include desktop {
     flex-direction: row;
     padding: 0;
-    align-items: baseline;
+    // align-items: baseline;
+    padding-left: 8.25rem;
+    padding-right: 8.25rem;
   }
 
   &__title {
@@ -106,12 +110,11 @@
     @include tablet {
       font-size: 2.5rem;
       line-height: 2.75rem;
-      padding-bottom: 2.5rem;
       padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
     }
     @include desktop {
-      padding-left: 8.5rem;
-      padding-right: 8.5rem;
+      padding-right: 8.25rem;
     }
   }
   &__container {
@@ -125,12 +128,16 @@
       align-items: center;
     }
     @include desktop {
-      padding-right: 8.5rem;
       flex-grow: 1;
+      align-items: flex-end;
     }
   }
   &__dates {
     padding-bottom: 1rem;
+
+    @include desktop {
+      padding-bottom: 0;
+    }
   }
   &__small-text {
     font-size: 0.8125rem;
@@ -147,6 +154,9 @@
     @include tablet {
       padding-bottom: 1.5rem;
     }
+    @include desktop {
+      padding-bottom: 0;
+    }
 
     &--bold {
       font-family: "Avenir-2";
@@ -154,9 +164,16 @@
   }
   &__venue {
     padding-bottom: 1rem;
+    @include desktop {
+      padding-bottom: 0;
+    }
   }
   &__location {
     padding-bottom: 1rem;
+
+    @include desktop {
+      padding-bottom: 0;
+    }
   }
   &__button-container {
     display: flex;
@@ -181,7 +198,13 @@
       height: 7vh;
     }
     @include desktop {
-      width: 10vw;
+      width: 12vw;
+      height: 5vh;
+      margin-bottom: 0;
     }
   }
+}
+
+* {
+  border: 0.25px solid red;
 }
