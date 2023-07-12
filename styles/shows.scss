@@ -125,7 +125,7 @@
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-end;
     }
     @include desktop {
       flex-grow: 1;
@@ -133,6 +133,9 @@
     }
   }
   &__dates {
+    @include tablet {
+      width: 19vw;
+    }
     @include desktop {
       width: 12vw;
     }
@@ -163,15 +166,20 @@
     }
   }
   &__venue {
+    @include tablet {
+      width: 19vw;
+    }
     @include desktop {
       width: 12vw;
     }
   }
   &__location {
     padding-bottom: 1rem;
-
-    @include desktop {
+    @include tablet {
+      width: 19vw;
       padding-bottom: 0;
+    }
+    @include desktop {
       width: 12vw;
     }
   }
@@ -199,8 +207,8 @@
     height: 5vh;
 
     @include tablet {
-      width: 22vw;
-      height: 7vh;
+      width: 24vw;
+      height: 6vh;
     }
     @include desktop {
       width: 12vw;
