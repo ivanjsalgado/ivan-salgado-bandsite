@@ -23,14 +23,27 @@ let showsArr = [
 ];
 
 const mainContainer = document.querySelector("main");
+const shows = document.createElement("article");
+shows.classList.add("shows");
+const shows__title = document.createElement("h2");
+shows__title.innerText = "Shows";
+shows__title.classList.add("shows__title");
+shows.appendChild(shows__title);
+
+let createElement = (element, className, text) => {
+  const card = document.createElement(element);
+  card.classList.add(className);
+  if (text != "") {
+    card.innerText = text;
+  }
+  return card;
+};
+
+let appendElement = (card, parent) => {
+  parent.appendChild(card);
+};
 
 for (let i = 0; i < showsArr[0].date.length; i++) {
-  const shows = document.createElement("article");
-  shows.classList.add("shows");
-  const shows__title = document.createElement("h2");
-  shows__title.innerText = "Shows";
-  shows__title.classList.add("shows__title");
-  shows.appendChild(shows__title);
   const shows__container = document.createElement("section");
   shows__container.classList.add("shows__container");
   shows.appendChild(shows__container);

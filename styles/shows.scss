@@ -103,7 +103,6 @@
 
   &__title {
     @include header-text;
-    padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     font-family: "Avenir-2";
 
@@ -121,6 +120,7 @@
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid $mercury;
+    // padding-bottom: 1rem;
 
     @include tablet {
       flex-direction: row;
@@ -133,10 +133,7 @@
     }
   }
   &__dates {
-    padding-bottom: 1rem;
-
     @include desktop {
-      padding-bottom: 0;
       width: 12vw;
     }
   }
@@ -144,6 +141,8 @@
     font-size: 0.8125rem;
     line-height: 1.125rem;
     color: $silver;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 
     @include tablet {
       padding-bottom: 1.5rem;
@@ -164,9 +163,7 @@
     }
   }
   &__venue {
-    padding-bottom: 1rem;
     @include desktop {
-      padding-bottom: 0;
       width: 12vw;
     }
   }
@@ -187,6 +184,9 @@
     }
   }
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90vw;
     background-color: $bandsite-black;
     color: $white;
@@ -195,6 +195,8 @@
     font-size: 1rem;
     font-family: "Avenir-2";
     margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    height: 5vh;
 
     @include tablet {
       width: 22vw;
