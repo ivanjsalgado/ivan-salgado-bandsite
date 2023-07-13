@@ -94,11 +94,12 @@
     padding-top: 2.5rem;
   }
   @include desktop {
-    flex-direction: row;
     padding: 0;
-    // align-items: baseline;
+    align-items: baseline;
     padding-left: 8.25rem;
     padding-right: 8.25rem;
+    flex-direction: row;
+    padding-bottom: 2.25rem;
   }
 
   &__title {
@@ -116,6 +117,15 @@
       padding-right: 8.25rem;
     }
   }
+  &__div {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-grow: 1;
+      // flex-direction: row;
+    }
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -130,6 +140,7 @@
     @include desktop {
       flex-grow: 1;
       align-items: flex-end;
+      margin-top: 0.75rem;
     }
   }
   &__dates {
@@ -148,8 +159,11 @@
     padding-bottom: 0.5rem;
 
     @include tablet {
-      padding-bottom: 1.5rem;
+      padding-bottom: 2.25rem;
+      padding-top: 0rem;
     }
+  }
+  &__small-test-visible {
   }
   &__middle-text {
     font-size: 1rem;
@@ -158,7 +172,6 @@
       padding-bottom: 1.5rem;
     }
     @include desktop {
-      padding-bottom: 0;
     }
 
     &--bold {
@@ -213,7 +226,11 @@
     @include desktop {
       width: 12vw;
       height: 5vh;
-      margin-bottom: 0;
+    }
+  }
+  &__hide {
+    @include tablet {
+      display: none;
     }
   }
 }
