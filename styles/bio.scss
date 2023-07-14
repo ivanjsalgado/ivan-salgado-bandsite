@@ -179,6 +179,7 @@
   &__title {
     font-family: "Avenir-2";
     @include header-text;
+    padding-bottom: 1rem;
 
     @include tablet {
       padding-bottom: 2.25rem;
@@ -333,7 +334,7 @@
     font-family: "Avenir-2";
     @include header-text;
     @include margin-bottom;
-    padding: 1.5rem 0rem 0rem 1rem;
+    padding-top: 1.5rem;
 
     @include tablet {
       @include header-section-text-tablet-desktop;
@@ -381,6 +382,12 @@
   }
 }
 
+.comments {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  &__title {
+  }
+}
 .footer {
   background-color: $bandsite-black;
   display: flex;

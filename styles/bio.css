@@ -203,6 +203,7 @@
   font-family: "Avenir-2";
   font-size: 1.5rem;
   line-height: 2rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .about__title {
@@ -382,7 +383,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 1rem;
-  padding: 1.5rem 0rem 0rem 1rem;
+  padding-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__title {
@@ -432,6 +433,10 @@
   }
 }
 
+.comments {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 .footer {
   background-color: #323232;
   display: flex;
