@@ -3,6 +3,36 @@
 @use "./partials/colors" as *;
 @use "./partials/variables" as *;
 
+.header {
+  &__bio {
+    color: $mercury;
+  }
+
+  &__link-bio {
+    border-bottom: none;
+
+    @include tablet {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__link-shows {
+    border-bottom: 4px solid $white;
+
+    @include tablet {
+      margin-left: 1.6rem;
+      padding-bottom: 1.25rem;
+    }
+    @include desktop {
+      width: 5vw;
+    }
+  }
+
+  &__shows {
+    color: white;
+  }
+}
+
 .hero {
   padding: 1rem;
   display: flex;
@@ -123,14 +153,12 @@
 
     @include tablet {
       flex-grow: 1;
-      // flex-direction: row;
     }
   }
   &__container {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid $mercury;
-    // padding-bottom: 1rem;
 
     @include tablet {
       flex-direction: row;
@@ -141,6 +169,14 @@
       flex-grow: 1;
       align-items: flex-end;
       margin-top: 0.75rem;
+    }
+
+    &:hover {
+      background-color: $alabaster;
+    }
+
+    &:visited {
+      background-color: salmon;
     }
   }
   &__dates {
@@ -163,8 +199,7 @@
       padding-top: 0rem;
     }
   }
-  &__small-test-visible {
-  }
+
   &__middle-text {
     font-size: 1rem;
 
@@ -213,6 +248,7 @@
     color: $white;
     padding: 1rem;
     border-radius: 4px;
+    border-color: transparent;
     font-size: 1rem;
     font-family: "Avenir-2";
     margin-bottom: 1rem;
