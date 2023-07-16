@@ -119,7 +119,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 0.5rem;
-  color: #ffffff;
+  text-decoration: none;
+  color: #e1e1e1;
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
@@ -441,7 +442,13 @@
     padding: 2.5rem 2.25rem 2.25rem 2.25rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comments {
+    padding: 2.5rem 8.5rem 2.25rem 8.5rem;
+  }
+}
 .comments__title {
+  font-family: "Avenir-2";
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
@@ -458,14 +465,14 @@
 }
 @media screen and (min-width: 768px) {
   .comments__container {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .comments__container {
-    padding-left: 8.25rem;
-    padding-right: 8.25rem;
+    padding-left: 16.25rem;
+    padding-right: 16.25rem;
   }
 }
 .comments__photo {
@@ -563,14 +570,20 @@
 }
 @media screen and (min-width: 768px) {
   .comments__submit {
-    width: 9rem;
+    width: 10rem;
     align-self: flex-end;
   }
 }
 @media screen and (min-width: 768px) {
   .comments__div-submitted {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__div-submitted {
+    padding-left: 16.25rem;
+    padding-right: 16.25rem;
   }
 }
 .comments__submitted {
@@ -580,6 +593,9 @@
 }
 .comments__submitted:last-child {
   border-bottom: 1px solid #e1e1e1;
+}
+.comments__new-comment {
+  display: flex;
 }
 .comments__submit-photo {
   margin-top: 1rem;
@@ -594,9 +610,6 @@
     height: 3rem;
     width: 3rem;
   }
-}
-.comments__new-comment {
-  display: flex;
 }
 .comments__new-comment-name {
   display: flex;
@@ -616,7 +629,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   flex-grow: 1;
   text-align: right;
   color: #afafaf;
@@ -644,8 +657,13 @@
 }
 @media screen and (min-width: 768px) {
   .comments__text {
-    font-size: 0.855rem;
+    font-size: 0.875rem;
     line-height: 1.375rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__text {
+    font-size: 0.8425rem;
   }
 }
 

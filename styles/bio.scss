@@ -103,7 +103,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem;
-    color: $white;
+    text-decoration: none;
+    color: $mercury;
     @include subheader-text;
 
     @include tablet {
@@ -157,8 +158,6 @@
 
   @include tablet {
     padding: 0;
-  }
-  @include desktop {
   }
 
   &__title-container {
@@ -389,7 +388,12 @@
     padding: 2.5rem 2.25rem 2.25rem 2.25rem;
   }
 
+  @include desktop {
+    padding: 2.5rem 8.5rem 2.25rem 8.5rem;
+  }
+
   &__title {
+    font-family: "Avenir-2";
     padding-bottom: 1rem;
     padding-top: 1rem;
 
@@ -403,12 +407,12 @@
     display: flex;
 
     @include tablet {
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding-left: 3.75rem;
+      padding-right: 3.75rem;
     }
     @include desktop {
-      padding-left: 8.25rem;
-      padding-right: 8.25rem;
+      padding-left: 16.25rem;
+      padding-right: 16.25rem;
     }
   }
   &__photo {
@@ -501,14 +505,19 @@
     margin-bottom: 1rem;
 
     @include tablet {
-      width: 9rem;
+      width: 10rem;
       align-self: flex-end;
     }
   }
   &__div-submitted {
     @include tablet {
-      padding-left: 4rem;
-      padding-right: 4rem;
+      padding-left: 3.75rem;
+      padding-right: 3.75rem;
+    }
+
+    @include desktop {
+      padding-left: 16.25rem;
+      padding-right: 16.25rem;
     }
   }
   &__submitted {
@@ -520,6 +529,11 @@
       border-bottom: 1px solid $mercury;
     }
   }
+
+  &__new-comment {
+    display: flex;
+  }
+
   &__submit-photo {
     margin-top: 1rem;
     height: 2.25rem;
@@ -533,9 +547,7 @@
       width: 3rem;
     }
   }
-  &__new-comment {
-    display: flex;
-  }
+
   &__new-comment-name {
     display: flex;
     align-items: center;
@@ -553,9 +565,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    // font-size: 0.875rem;
-    // line-height: 1.375rem;
-    font-size: 12px;
+    font-size: 0.75rem;
     flex-grow: 1;
     text-align: right;
     color: $silver;
@@ -579,8 +589,11 @@
     margin-bottom: 1rem;
 
     @include tablet {
-      font-size: 0.855rem;
+      font-size: 0.875rem;
       line-height: 1.375rem;
+    }
+    @include desktop {
+      font-size: 0.8425rem;
     }
   }
 }
