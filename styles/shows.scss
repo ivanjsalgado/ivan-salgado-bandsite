@@ -6,10 +6,12 @@
 .header {
   &__bio {
     color: $mercury;
+    text-decoration: none;
   }
 
   &__link-bio {
     border-bottom: none;
+    text-decoration: none;
 
     @include tablet {
       padding-bottom: 1.5rem;
@@ -20,11 +22,12 @@
     border-bottom: 4px solid $white;
 
     @include tablet {
-      margin-left: 1.6rem;
       padding-bottom: 1.25rem;
     }
     @include desktop {
       width: 5vw;
+      margin-left: 1.6rem;
+      padding-bottom: 1.25rem;
     }
   }
 
@@ -169,15 +172,15 @@
       flex-grow: 1;
       align-items: flex-end;
       margin-top: 0.75rem;
-    }
 
-    &:hover {
-      background-color: $alabaster;
+      &:hover {
+        background-color: $alabaster;
+      }
     }
+  }
 
-    &:visited {
-      background-color: salmon;
-    }
+  &__selected {
+    background-color: $mercury;
   }
   &__dates {
     @include tablet {

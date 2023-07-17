@@ -84,3 +84,20 @@ functionRow("shows__small-text-visible", 0, grandChild);
 for (let i = 1; i < showsArr[0].date.length; i++) {
   functionRow("shows__hide", i, copyGrandChild);
 }
+
+const selectedElements = document.querySelectorAll(".shows__container");
+
+const removeClass = () => {
+  for (const selectedElement of selectedElements) {
+    selectedElement.classList.remove("shows__selected");
+  }
+};
+
+const selected = (e) => {
+  removeClass();
+  e.target.classList.add("shows__selected");
+};
+
+for (let i = 0; i < selectedElements.length; i++) {
+  selectedElements[i].addEventListener("click", selected);
+}
