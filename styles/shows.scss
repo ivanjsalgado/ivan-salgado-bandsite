@@ -116,7 +116,6 @@
 .shows {
   display: flex;
   flex-direction: column;
-  // Is this right?
   @include subheader-text;
   padding-left: 1rem;
   padding-right: 1rem;
