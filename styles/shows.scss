@@ -62,7 +62,8 @@
   }
 
   &__album {
-    font-family: "Avenir-2";
+    font-family: "Avenir";
+    font-weight: 600;
     @include body-text-tablet-desktop;
 
     @include tablet {
@@ -83,7 +84,8 @@
 
   &__heading {
     @include header-text;
-    font-family: "Avenir-3";
+    font-family: "Avenir";
+    font-weight: 700;
     padding: 1rem 2rem 1rem 0;
 
     @include tablet {
@@ -138,7 +140,8 @@
   &__title {
     @include header-text;
     padding-top: 1.5rem;
-    font-family: "Avenir-2";
+    font-family: "Avenir";
+    font-weight: 600;
 
     @include tablet {
       font-size: 2.5rem;
@@ -213,7 +216,8 @@
     }
 
     &--bold {
-      font-family: "Avenir-2";
+      font-family: "Avenir";
+      font-weight: 600;
     }
   }
   &__venue {
@@ -253,7 +257,8 @@
     border-radius: 4px;
     border-color: transparent;
     font-size: 1rem;
-    font-family: "Avenir-2";
+    font-family: "Avenir";
+    font-weight: 600;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
     height: 5vh;

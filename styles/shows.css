@@ -4,12 +4,12 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "Avenir-2";
+  font-family: "Avenir";
   src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProDemi.ttf) format(opentype);
   font-weight: 600;
 }
 @font-face {
-  font-family: "Avenir-3";
+  font-family: "Avenir";
   src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProBold.ttf) format(opentype);
   font-weight: 700;
 }
@@ -73,7 +73,8 @@
   }
 }
 .hero__album {
-  font-family: "Avenir-2";
+  font-family: "Avenir";
+  font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
@@ -97,7 +98,8 @@
 .hero__heading {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "Avenir-3";
+  font-family: "Avenir";
+  font-weight: 700;
   padding: 1rem 2rem 1rem 0;
 }
 @media screen and (min-width: 768px) {
@@ -162,7 +164,8 @@
   font-size: 1.5rem;
   line-height: 2rem;
   padding-top: 1.5rem;
-  font-family: "Avenir-2";
+  font-family: "Avenir";
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .shows__title {
@@ -243,7 +246,8 @@
   }
 }
 .shows__middle-text--bold {
-  font-family: "Avenir-2";
+  font-family: "Avenir";
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .shows__venue {
@@ -289,7 +293,8 @@
   border-radius: 4px;
   border-color: transparent;
   font-size: 1rem;
-  font-family: "Avenir-2";
+  font-family: "Avenir";
+  font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   height: 5vh;

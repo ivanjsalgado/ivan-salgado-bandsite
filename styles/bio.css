@@ -4,12 +4,12 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "Avenir-2";
+  font-family: "Avenir";
   src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProDemi.ttf) format(opentype);
   font-weight: 600;
 }
 @font-face {
-  font-family: "Avenir-3";
+  font-family: "Avenir";
   src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProBold.ttf) format(opentype);
   font-weight: 700;
 }
@@ -149,7 +149,7 @@
   }
 }
 .hero__title {
-  font-family: "Avenir-2";
+  font-weight: 600;
   font-size: 1.5rem;
   margin-left: 1rem;
 }
@@ -196,7 +196,7 @@
   }
 }
 .about__title {
-  font-family: "Avenir-2";
+  font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
   padding-bottom: 1rem;
@@ -240,7 +240,7 @@
 }
 .about__quote {
   display: flex;
-  font-family: "Avenir-2";
+  font-weight: 600;
   font-size: 0.8125rem;
   line-height: 1.125rem;
 }
@@ -258,7 +258,7 @@
   }
 }
 .about__author {
-  font-family: "Avenir-2";
+  font-weight: 600;
   font-size: 0.8125rem;
   line-height: 1.125rem;
   margin-bottom: 1rem;
@@ -278,7 +278,7 @@
   }
 }
 .about__sub-title {
-  font-family: "Avenir-2";
+  font-weight: 600;
   font-size: 0.8125rem;
   line-height: 1.125rem;
   margin-bottom: 1rem;
@@ -375,7 +375,7 @@
   }
 }
 .gallery__title {
-  font-family: "Avenir-2";
+  font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 1rem;
@@ -443,7 +443,7 @@
   }
 }
 .comments__title {
-  font-family: "Avenir-2";
+  font-weight: 600;
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
@@ -611,8 +611,7 @@
   align-items: center;
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  font-family: "Avenir-2";
-  font-weight: 700;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .comments__new-comment-name {
@@ -696,7 +695,7 @@
   }
 }
 .footer__title {
-  font-family: "Avenir-2";
+  font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
   padding-top: 1.5rem;
@@ -777,7 +776,7 @@
   }
 }
 .footer__cam--bold {
-  font-family: "Avenir-2";
+  font-weight: 600;
 }
 .footer__bees-address {
   margin-bottom: 1rem;
@@ -808,7 +807,7 @@
   }
 }
 .footer__pearl--bold {
-  font-family: "Avenir-2";
+  font-weight: 600;
 }
 .footer__limit-description {
   margin-bottom: 1rem;
@@ -849,7 +848,7 @@
   }
 }
 .footer__carson--bold {
-  font-family: "Avenir-2";
+  font-weight: 600;
 }
 .footer__arch-description {
   margin-bottom: 1rem;

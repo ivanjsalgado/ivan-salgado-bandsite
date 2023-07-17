@@ -130,7 +130,7 @@
     background-position: left bottom -8.5rem;
   }
   &__title {
-    font-family: "Avenir-2";
+    font-weight: 600;
     font-size: 1.5rem;
     margin-left: 1rem;
 
@@ -173,7 +173,7 @@
   }
 
   &__title {
-    font-family: "Avenir-2";
+    font-weight: 600;
     @include header-text;
     padding-bottom: 1rem;
 
@@ -213,7 +213,7 @@
 
   &__quote {
     display: flex;
-    font-family: "Avenir-2";
+    font-weight: 600;
     @include body-text;
 
     @include tablet {
@@ -228,7 +228,7 @@
   }
 
   &__author {
-    font-family: "Avenir-2";
+    font-weight: 600;
     @include body-text;
     @include margin-bottom;
     margin-top: 1rem;
@@ -245,7 +245,7 @@
   }
 
   &__sub-title {
-    font-family: "Avenir-2";
+    font-weight: 600;
     @include body-text;
     @include margin-bottom;
 
@@ -327,7 +327,7 @@
   }
 
   &__title {
-    font-family: "Avenir-2";
+    font-weight: 600;
     @include header-text;
     @include margin-bottom;
     padding-top: 1.5rem;
@@ -390,7 +390,7 @@
   }
 
   &__title {
-    font-family: "Avenir-2";
+    font-weight: 600;
     padding-bottom: 1rem;
     padding-top: 1rem;
 
@@ -550,8 +550,7 @@
     align-items: center;
     font-size: 0.8125rem;
     line-height: 1.125rem;
-    font-family: "Avenir-2";
-    font-weight: 700;
+    font-weight: 600;
 
     @include tablet {
       font-size: 0.875rem;
@@ -623,7 +622,7 @@
   }
 
   &__title {
-    font-family: "Avenir-2";
+    font-weight: 600;
     @include header-text;
     padding-top: 1.5rem;
     @include margin-bottom;
@@ -700,7 +699,7 @@
     }
 
     &--bold {
-      font-family: "Avenir-2";
+      font-weight: 600;
     }
   }
 
@@ -733,7 +732,7 @@
     }
 
     &--bold {
-      font-family: "Avenir-2";
+      font-weight: 600;
     }
   }
 
@@ -773,7 +772,7 @@
     }
 
     &--bold {
-      font-family: "Avenir-2";
+      font-weight: 600;
     }
   }
 
