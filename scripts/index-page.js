@@ -3,6 +3,7 @@ const api =
   "https://project-1-api.herokuapp.com/comments/?api_key=<af87379d-e746-4710-9695-e27430d52d03>";
 
 axios.get(api).then((response) => {
+  console.log(response);
   pulledArr = response.data;
   displayComment(pulledArr);
 });
