@@ -1,11 +1,11 @@
 let pulledArr;
+let newComment = [];
 const api =
   "https://project-1-api.herokuapp.com/comments/?api_key=<af87379d-e746-4710-9695-e27430d52d03>";
 
 axios.get(api).then((response) => {
-  console.log(response);
   pulledArr = response.data;
-  displayComment(pulledArr);
+  displayComment(response.data, 0, 3);
 });
 
 let createCard = (element, parent, className, text) => {
@@ -21,8 +21,8 @@ let createCard = (element, parent, className, text) => {
 const parent = document.querySelector(".comments");
 let divContainer = createCard("div", parent, "comments__div-submitted");
 
-let displayComment = (arr) => {
-  for (let i = 0; i < arr.length; i++) {
+let displayComment = (arr, start, end) => {
+  for (let i = start; i < end; i++) {
     let child = createCard("section", divContainer, "comments__submitted");
     let grandChild = createCard("div", child, "comments__new-comment");
     let greatGrandChild = createCard(
@@ -58,15 +58,23 @@ form.addEventListener("submit", retrieveComment);
 
 function retrieveComment(e) {
   e.preventDefault();
-  let obj = { name: "", timestamp: "", comment: "" };
+  let obj = { name: "", comment: "", timestamp: "" };
   let userName = document.getElementById("name").value;
   let userComment = document.getElementById("comment-area").value;
-  let date = new Date().toLocaleDateString();
+  let date = new Date();
   obj.name = userName;
   obj.timestamp = date;
   obj.comment = userComment;
-  pulledArr.unshift(obj);
-  divContainer.innerHTML = "";
-  form.reset();
-  displayComment(pulledArr);
+  axios
+    .post(api, {
+      name: userName,
+      comment: userComment,
+    })
+    .then((result) => {
+      form.reset();
+      divContainer.innerHTML = "";
+      newComment.unshift(result.data);
+      displayComment(newComment, 0, newComment.length);
+      displayComment(pulledArr, 0, 3);
+    });
 }
