@@ -1,20 +1,11 @@
-let arr = [
-  {
-    name: "Connor Walton",
-    date: "02/17/2021",
-    text: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
-  },
-  {
-    name: "Emilie Beach",
-    date: "01/09/2021",
-    text: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
-  },
-  {
-    name: "Miles Acosta",
-    date: "12/20/2020",
-    text: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
-  },
-];
+let pulledArr;
+const api =
+  "https://project-1-api.herokuapp.com/comments/?api_key=<af87379d-e746-4710-9695-e27430d52d03>";
+
+axios.get(api).then((response) => {
+  pulledArr = response.data;
+  displayComment(pulledArr);
+});
 
 let createCard = (element, parent, className, text) => {
   const card = document.createElement(element);
@@ -48,14 +39,14 @@ let displayComment = (arr) => {
       "p",
       grandChild,
       "comments__new-comment-date",
-      `${arr[i].date}`
+      `${new Date(arr[i].timestamp).toLocaleDateString()}`
     );
     grandChild = createCard("div", child, "comments__text-container");
     greatGrandChild = createCard(
       "p",
       grandChild,
       "comments__text",
-      `${arr[i].text}`
+      `${arr[i].comment}`
     );
   }
 };
@@ -66,17 +57,15 @@ form.addEventListener("submit", retrieveComment);
 
 function retrieveComment(e) {
   e.preventDefault();
-  let obj = { name: "", date: "", text: "" };
+  let obj = { name: "", timestamp: "", comment: "" };
   let userName = document.getElementById("name").value;
   let userComment = document.getElementById("comment-area").value;
   let date = new Date().toLocaleDateString();
   obj.name = userName;
-  obj.date = date;
-  obj.text = userComment;
-  arr.unshift(obj);
+  obj.timestamp = date;
+  obj.comment = userComment;
+  pulledArr.unshift(obj);
   divContainer.innerHTML = "";
   form.reset();
-  displayComment(arr);
+  displayComment(pulledArr);
 }
-
-displayComment(arr);
