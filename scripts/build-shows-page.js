@@ -80,7 +80,7 @@ let functionRow = (hide, i, copyGrandChild) => {
     "p",
     greatGrandChild,
     ["shows__middle-text", "shows__middle-text--bold"],
-    `${new Date(pulledArr[i].date).toLocaleDateString()}`
+    `${new Date(pulledArr[i].date).toDateString()}`
   );
   greatGrandChild = createCard("div", child, ["shows__venue"]);
   createCard("p", greatGrandChild, ["shows__small-text", hide], "VENUE");
