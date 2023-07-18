@@ -58,12 +58,10 @@ form.addEventListener("submit", retrieveComment);
 
 function retrieveComment(e) {
   e.preventDefault();
-  let obj = { name: "", comment: "", timestamp: "" };
+  let obj = { name: "", comment: "" };
   let userName = document.getElementById("name").value;
   let userComment = document.getElementById("comment-area").value;
-  let date = new Date();
   obj.name = userName;
-  obj.timestamp = date;
   obj.comment = userComment;
   axios
     .post(api, {
