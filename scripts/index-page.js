@@ -5,7 +5,7 @@ const api =
 
 axios.get(api).then((response) => {
   pulledArr = response.data;
-  displayComment(response.data, 0, 3);
+  displayComment(pulledArr, pulledArr.length - 1, 0);
 });
 
 let createCard = (element, parent, className, text) => {
@@ -22,7 +22,7 @@ const parent = document.querySelector(".comments");
 let divContainer = createCard("div", parent, "comments__div-submitted");
 
 let displayComment = (arr, start, end) => {
-  for (let i = start; i < end; i++) {
+  for (let i = start; i >= end; i--) {
     let child = createCard("section", divContainer, "comments__submitted");
     let grandChild = createCard("div", child, "comments__new-comment");
     let greatGrandChild = createCard(
@@ -72,7 +72,7 @@ function retrieveComment(e) {
       form.reset();
       divContainer.innerHTML = "";
       newComment.unshift(result.data);
-      displayComment(newComment, 0, newComment.length);
-      displayComment(pulledArr, 0, 3);
+      displayComment(newComment, newComment.length - 1, 0);
+      displayComment(pulledArr, pulledArr.length - 1, 0);
     });
 }
