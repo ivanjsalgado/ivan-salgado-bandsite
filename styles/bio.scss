@@ -127,7 +127,6 @@
   }
   @include desktop {
     height: 64vh;
-    background-position: left bottom -8.5rem;
   }
   &__title {
     font-weight: 600;
@@ -533,15 +532,19 @@
 
   &__submit-photo {
     margin-top: 1rem;
-    height: 2.25rem;
-    width: 2.25rem;
+    height: 11.25vw;
+    width: 11.25vw;
     border-radius: 50%;
     margin-right: 1rem;
     background-color: $mercury;
 
     @include tablet {
-      height: 3rem;
-      width: 3rem;
+      height: 6.25vw;
+      width: 6.25vw;
+    }
+    @include desktop {
+      height: 3.75vw;
+      width: 3.75vw;
     }
   }
 
