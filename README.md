@@ -4,9 +4,9 @@ Band Site is the third project in the BrainStation curriculum, spanning three we
 
 The website was designed to be responsive and adapt its layout based on three distinct screen sizes:
 
-Less than 786 pixels: Mobile formatting is applied.
-Between 786 pixels and less than 1280 pixels: Tablet formatting is utilized.
-More than 1280 pixels: Desktop formatting is implemented.
+- Less than 786 pixels: Mobile formatting is applied.
+- Between 786 pixels and less than 1280 pixels: Tablet formatting is utilized.
+- More than 1280 pixels: Desktop formatting is implemented.
 
 Technologies used:
 
